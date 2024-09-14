@@ -163,10 +163,16 @@
 
 #content {
     width: 100%;
-    padding: 20px;
     min-height: 100vh;
     transition: all 0.3s;
     background-color: var(--bg-color);
+
+    @media screen and (max-width:1023px) {
+        padding: 20px 0;
+    }
+    @media screen and (min-width:1024px) {
+        padding: 20px;
+    }
 }
 
 #sidebarCollapse {
@@ -425,6 +431,7 @@ ul.nav.nav-pills {
     .nav-item {
         a.nav-link {
             color: var(--cinza-claro);
+            font-size: 12px;
 
             &.active {
                 color: var(--laranja);

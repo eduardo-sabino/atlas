@@ -172,10 +172,19 @@ span {
 
 #content {
   width: 100%;
-  padding: 20px;
   min-height: 100vh;
   transition: all 0.3s;
   background-color: var(--bg-color);
+}
+@media screen and (max-width: 1023px) {
+  #content {
+    padding: 20px 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #content {
+    padding: 20px;
+  }
 }
 
 #sidebarCollapse {
@@ -384,6 +393,7 @@ ul.nav.nav-pills {
 }
 ul.nav.nav-pills .nav-item a.nav-link {
   color: var(--cinza-claro);
+  font-size: 12px;
 }
 ul.nav.nav-pills .nav-item a.nav-link.active {
   color: var(--laranja);
