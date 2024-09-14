@@ -116,6 +116,40 @@ $(document).ready(function () {
     });
 
 
+    var graficoCrescimentoChartum = document.getElementById('graficoCrescimentoChartum').getContext('2d');
+
+    var labels = ['JAN', 'FEV', 'MAR', 'ABR', 'MAI', 'JUN', 'JUL', 'AGO', 'SET']; // Definir os rótulos
+
+    var chart = new Chart(graficoCrescimentoChartum, {
+        type: 'line',
+        data: {
+            labels: labels,
+            datasets: [{
+                label: '', // Deixe o label vazio se quiser esconder o texto da legenda
+                data: [30000, 60000, 40000, 100000, 40000, 80000, 40000, 60000, 70000], // Valores numéricos
+                fill: false,
+                borderColor: '#DE8734',
+                tension: 0.2
+            }]
+        },
+        options: {
+            legend: {
+                display: false // Esconder a legenda
+            },
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        // Formatar os valores do eixo Y com "K"
+                        callback: function (value, index, values) {
+                            return value / 1000 + 'K'; // Exibe como "K"
+                        }
+                    }
+                }]
+            }
+        }
+    });
+
+
 });
 
 $('button.togle').on('click', function () {

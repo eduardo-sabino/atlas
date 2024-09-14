@@ -114,9 +114,6 @@ span {
   border: solid 1px;
   border-radius: 12px;
 }
-#sidebar ul.components a.active svg {
-  stroke: var(--laranja);
-}
 #sidebar ul.components a:hover {
   text-decoration: none;
   color: var(--laranja);
