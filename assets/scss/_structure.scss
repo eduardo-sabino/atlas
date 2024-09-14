@@ -85,7 +85,7 @@
 
             &:hover {
                 text-decoration: none;
-                color: var(--laranja);               
+                color: var(--laranja);
             }
         }
 
@@ -207,6 +207,10 @@
 
     &:not(grafico) {
         min-height: 234px;
+
+        @media screen and (min-width:1366px) {
+            min-height: 100%;
+        }
     }
 
     // height: 100%;
@@ -313,8 +317,6 @@
     }
 }
 
-
-
 .table {
     tr {
 
@@ -411,12 +413,68 @@ span {
     }
 }
 
-
 @media screen and (min-width:1366px) {
     #chart {
         height: 14rem !important;
     }
 }
 
+ul.nav.nav-pills {
+    margin-bottom: 36px;
+
+    .nav-item {
+        a.nav-link {
+            color: var(--cinza-claro);
+
+            &.active {
+                color: var(--laranja);
+                border: 1px solid var(--laranja);
+                border-radius: 12px;
+                background-color: transparent;
+            }
+        }
+    }
+}
+
+.filter {
+    color: var(--cinza-claro);
+    background: var(--bg-color);
+    font-size: 10px;
+    padding: 0 10px;
+    border-radius: 5px;
+}
+
+span.card-link {
+    color: var(--cinza) !important;
+}
+
+.card-footer {
+    background: transparent;
+    align-items: center;
+
+    @media screen and (min-width:768px) {
+        display: flex;
+    }
+
+    nav {
+        margin-bottom: auto;
+        margin-left: auto;
+    }
+
+    .page-item {
+        a {
+            background-color: var(--bg-color);
+            color: var(--cinza-medio);
+            border: none;
+            border-radius: 4px;
+            margin-left: .3rem;
+
+
+            &.active {
+                color: var(--laranja);
+            }
+        }
+    }
+}
 
 // @media screen and (min-width:769px) {}

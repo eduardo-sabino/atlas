@@ -211,6 +211,11 @@ span {
 .custom-card:not(grafico) {
   min-height: 234px;
 }
+@media screen and (min-width: 1366px) {
+  .custom-card:not(grafico) {
+    min-height: 100%;
+  }
+}
 @media screen and (max-width: 768px) {
   .custom-card .card-body {
     padding: 0;
@@ -377,6 +382,55 @@ span.subtitle {
     height: 14rem !important;
   }
 }
+ul.nav.nav-pills {
+  margin-bottom: 36px;
+}
+ul.nav.nav-pills .nav-item a.nav-link {
+  color: var(--cinza-claro);
+}
+ul.nav.nav-pills .nav-item a.nav-link.active {
+  color: var(--laranja);
+  border: 1px solid var(--laranja);
+  border-radius: 12px;
+  background-color: transparent;
+}
+
+.filter {
+  color: var(--cinza-claro);
+  background: var(--bg-color);
+  font-size: 10px;
+  padding: 0 10px;
+  border-radius: 5px;
+}
+
+span.card-link {
+  color: var(--cinza) !important;
+}
+
+.card-footer {
+  background: transparent;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .card-footer {
+    display: flex;
+  }
+}
+.card-footer nav {
+  margin-bottom: auto;
+  margin-left: auto;
+}
+.card-footer .page-item a {
+  background-color: var(--bg-color);
+  color: var(--cinza-medio);
+  border: none;
+  border-radius: 4px;
+  margin-left: 0.3rem;
+}
+.card-footer .page-item a.active {
+  color: var(--laranja);
+}
+
 .navbar {
   padding: 10px 20px;
 }
