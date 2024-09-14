@@ -11,8 +11,7 @@
         margin: 0;
         left: 0;
         background-color: var(--preto-medio);
-        padding-top: 1rem;
-        padding-bottom: 1rem;
+        padding:1rem 0;
 
         .container-fluid {
             justify-content: flex-start;
@@ -28,8 +27,9 @@
         }
 
         ul {
-            display: ruby;
+            display: -webkit-inline-box;
             float: right;
+            
         }
 
         .nav-link {
