@@ -27,3 +27,59 @@
     color: #f4f4f4;
     font-size: 14px;
 }
+
+.apexcharts-tooltip-title {
+    border-bottom: none !important;
+    color: var(--preto-medio) !important;
+    text-align: center;
+    background: var(--cinza-claro) !important;
+    // font-size: 8px !important;
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+    font-weight: 300;
+    font-family: 'SpaceGrotesk-Regular' !important;
+}
+
+.apexcharts-tooltip-series-group.apexcharts-tooltip-series-group-0.apexcharts-active,
+.apexcharts-tooltip-series-group.apexcharts-tooltip-series-group-1.apexcharts-active {
+    background: var(--cinza-claro) !important;
+    color: var(--preto-medio) !important;
+    font-weight: 300;
+    font-family: 'SpaceGrotesk-Regular' !important;
+}
+
+
+
+
+
+
+
+
+.filter-container {
+    display: flex;
+    gap: 10px;
+    margin-left: auto;
+
+    .btn-filter {
+        background-color: var(--bg-color);
+        color: var(--cinza-claro);
+        border: 1px solid var(--bg-color);
+        padding: 6px 12px;
+        border-radius: 6px;
+        font-size: 10px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        &.active {
+            // background-color: #f0ad4e;
+            color: var(--laranja);
+            border-color: var(--laranja);
+        }
+
+        &:hover {
+            // background-color: #f0ad4e;
+            color: var(--laranja);
+            border-color: var(--laranja);
+        }
+    }
+}

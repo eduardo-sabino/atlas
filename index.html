@@ -468,18 +468,16 @@
                                         <h6 class="card-title">
                                             <img width="18" src="./src/img/icons/grafico-para-cima.svg">
                                             gráfico de crescimento
-                                            <a class="filter ml-auto d-none" href="#">
-                                                <span>Mês</span>
-                                                <i class="fas fa-chevron-down"></i>
-                                            </a>
+                                            
+                                            
+                                            <div class="filter-container">
+                                                <button class="btn-filter active" data-filter="este-ano">Este Ano</button>
+                                                <button class="btn-filter" data-filter="6-meses">6 Meses</button>
+                                                <button class="btn-filter" data-filter="este-mes">Este Mês</button>
+                                                <button class="btn-filter" data-filter="7-dias">7 Dias</button>
+                                            </div>
                                         </h6>
-
-                                        <canvas id="graficoCrescimentoChart d-none"></canvas>
-
-
-                                        <div class="chart-container">
-                                            <canvas id="growthChart"></canvas>
-                                        </div>
+                                        <div id="lineChart1"></div>
 
                                     </div>
                                 </div>
@@ -731,7 +729,7 @@
                                                 <i class="fas fa-chevron-down"></i>
                                             </a>
                                         </h6>
-                                        <canvas id="graficoCrescimentoChartum"></canvas>
+                                        <div id="lineChart2"></div>
                                     </div>
                                 </div>
                             </div>
@@ -755,7 +753,7 @@
                                         </h6>
                                         <!-- <canvas id="chart"></canvas> -->
                                         <div class="chart-container">
-                                            <div id="chart"></div>
+                                            <div id="chart1"></div>
                                             <div class="chart-legend">
                                                 <div class="chart-legend-item">
                                                     <div class="legend-color" style="background-color: #F19B1A;"></div>

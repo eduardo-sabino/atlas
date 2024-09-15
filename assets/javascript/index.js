@@ -254,3 +254,159 @@ var options = {
 
 var chart = new ApexCharts(document.querySelector("#chart"), options);
 chart.render();
+
+
+//grafico 1
+var options1 = {
+    chart: {
+        type: 'line',
+        height: 300,
+        width: '100%',
+        toolbar: { show: false } // Remove o menu de exportação
+    },
+    series: [{
+        name: 'Receita',
+        data: [20000, 60000, 30000, 80000, 40000, 110000, 60000, 120000] // Valores correspondentes a cada mês
+    }],
+    colors: ['#F19B1A'], // Cor laranja para a linha
+    stroke: {
+        curve: 'smooth', // Linha suavizada
+        width: 3
+    },
+    xaxis: {
+        categories: ['JAN', 'FEV', 'MAR', 'ABR', 'MAI', 'JUN', 'JUL', 'AGO', 'SET'],
+        labels: {
+            style: {
+                colors: '#F4F4F4'
+            }
+        }
+    },
+    yaxis: {
+        labels: {
+            style: {
+                colors: '#F4F4F4'
+            },
+            formatter: function (value) {
+                return 'R$ ' + value.toLocaleString(); // Formata os valores em reais
+            }
+        }
+    },
+    grid: {
+        borderColor: '#333',
+        strokeDashArray: 4 // Linha pontilhada da grade
+    },
+    tooltip: {
+        y: {
+            formatter: function (value) {
+                return 'R$ ' + value.toLocaleString();
+            }
+        }
+    }
+};
+
+var chart1 = new ApexCharts(document.querySelector("#lineChart1"), options1);
+chart1.render();
+
+
+
+//grafico2
+var options2 = {
+    chart: {
+        type: 'line',
+        height: 300,
+        width: '100%',
+        toolbar: { show: false }
+    },
+    series: [{
+        name: 'Mês atual',
+        data: [400, 700, 500, 800, 600, 1000, 900, 1100, 1000, 1200] // Dados do mês atual
+    }, {
+        name: 'Mês anterior',
+        data: [500, 600, 400, 600, 700, 800, 700, 900, 800, 900], // Dados do mês anterior
+        stroke: {
+            dashArray: 4 // Linha pontilhada para a comparação
+        }
+    }],
+    colors: ['#F19B1A', '#606060'], // Laranja para mês atual, cinza para o anterior
+    stroke: {
+        curve: 'smooth',
+        width: 2
+    },
+    xaxis: {
+        categories: ['01 SET', '02 SET', '03 SET', '04 SET', '05 SET', '06 SET', '07 SET', '08 SET', '09 SET', '10 SET'],
+        labels: {
+            style: {
+                colors: '#F4F4F4'
+            }
+        }
+    },
+    yaxis: {
+        labels: {
+            style: {
+                colors: '#F4F4F4'
+            }
+        }
+    },
+    grid: {
+        borderColor: '#333',
+        strokeDashArray: 4
+    },
+    tooltip: {
+        shared: true, // Tooltip com múltiplos valores
+        intersect: false,
+        y: {
+            formatter: function (value) {
+                return value.toLocaleString();
+            }
+        }
+    }
+};
+
+var chart2 = new ApexCharts(document.querySelector("#lineChart2"), options2);
+chart2.render();
+
+
+// grafico3
+var options1 = {
+    chart: {
+        type: 'donut',
+        width: '100%'
+    },
+    series: [175, 80], // Percentuais de Depósitos, Depositantes, e FTD's
+    colors: ['#DE8734', '#B9B9B9'], // Cores das fatias
+    labels: ['Afiliados totais', 'Novos'],
+    legend: {
+        show: false // Desabilita a legenda padrão (será customizada fora do gráfico)
+    },
+    dataLabels: {
+        enabled: false // Remove as labels dentro da rosca
+    },
+    plotOptions: {
+        pie: {
+            expandOnClick: false,
+            donut: {
+                size: '70%',
+                labels: {
+                    show: true,
+                    total: {
+                        show: true,
+                        label: 'Total',
+                        formatter: function (w) {
+                            return '255'; // Valor total personalizado
+                        },
+                        style: {
+                            color: '#B9B9B9',
+                            fontSize: '16px'
+                        }
+                    }
+                }
+            }
+        }
+    },
+    stroke: {
+        show: false // Remove a borda branca
+    }
+};
+
+var chart1 = new ApexCharts(document.querySelector("#chart1"), options1);
+chart1.render();

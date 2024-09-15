@@ -236,10 +236,14 @@
         text-transform: uppercase;
 
 
-        display: flex;
+
         // letter-spacing: 1px;
         align-items: center;
         font-family: SpaceGrotesk-Light;
+
+        @media screen and (min-width:768px) {
+            display: flex;
+        }
 
         img {
             margin-right: .2rem;
