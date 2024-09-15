@@ -439,8 +439,24 @@
                                                 <i class="fas fa-chevron-down"></i>
                                             </a>
                                         </h6>
-                                        <!-- <canvas id="chart"></canvas> -->
-                                        <canvas id="visaoGeralChart"></canvas>
+                                        <div class="chart-container">
+                                            <div id="chart"></div>
+                                            <div class="chart-legend">
+                                                <div class="chart-legend-item">
+                                                    <div class="legend-color" style="background-color: #F19B1A;"></div>
+                                                    <div class="legend-label">Depósitos</div>
+                                                </div>
+                                                <div class="chart-legend-item">
+                                                    <div class="legend-color" style="background-color: #A6A6A6;"></div>
+                                                    <div class="legend-label">Depositantes</div>
+                                                </div>
+                                                <div class="chart-legend-item">
+                                                    <div class="legend-color" style="background-color: #353535;"></div>
+                                                    <div class="legend-label">FTD's</div>
+                                                </div>
+                                            </div>
+                                        </div>
+
                                     </div>
                                 </div>
 
@@ -450,14 +466,21 @@
                                 <div class="card custom-card">
                                     <div class="card-body">
                                         <h6 class="card-title">
-                                            <img width="18" src="./src/img/icons/grafico-para-cima.svg">gráfico de
-                                            crescimento
-                                            <a class="filter ml-auto" href="#">
+                                            <img width="18" src="./src/img/icons/grafico-para-cima.svg">
+                                            gráfico de crescimento
+                                            <a class="filter ml-auto d-none" href="#">
                                                 <span>Mês</span>
                                                 <i class="fas fa-chevron-down"></i>
                                             </a>
                                         </h6>
-                                        <canvas id="graficoCrescimentoChart"></canvas>
+
+                                        <canvas id="graficoCrescimentoChart d-none"></canvas>
+
+
+                                        <div class="chart-container">
+                                            <canvas id="growthChart"></canvas>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
@@ -731,7 +754,23 @@
                                             </a>
                                         </h6>
                                         <!-- <canvas id="chart"></canvas> -->
-                                        <canvas id="visaoGeralChartdois"></canvas>
+                                        <div class="chart-container">
+                                            <div id="chart"></div>
+                                            <div class="chart-legend">
+                                                <div class="chart-legend-item">
+                                                    <div class="legend-color" style="background-color: #F19B1A;"></div>
+                                                    <div class="legend-label">Depósitos</div>
+                                                </div>
+                                                <div class="chart-legend-item">
+                                                    <div class="legend-color" style="background-color: #A6A6A6;"></div>
+                                                    <div class="legend-label">Depositantes</div>
+                                                </div>
+                                                <div class="chart-legend-item">
+                                                    <div class="legend-color" style="background-color: #353535;"></div>
+                                                    <div class="legend-label">FTD's</div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
 
@@ -958,6 +997,7 @@
     <script src="./assets/lib/bootstrap-4.6.2-dist/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/lib/bootstrap-4.6.2-dist/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <script src="./assets/javascript/index.js"></script>
 
 </body>

@@ -210,3 +210,47 @@ $(document).ready(function () {
         if (windowWidth <= 768) { $('img.iconDesactive').attr('src', './src/img/logo/ATLAS icone 2.svg'); }
     }
 });
+
+var options = {
+    chart: {
+        type: 'donut',
+        width: '100%'
+    },
+    series: [45, 30, 25], // Percentuais de Depósitos, Depositantes, e FTD's
+    colors: ['#F19B1A', '#A6A6A6', '#353535'], // Cores das fatias
+    labels: ['Depósitos', 'Depositantes', 'FTD\'s'],
+    legend: {
+        show: false // Desabilita a legenda padrão (será customizada fora do gráfico)
+    },
+    dataLabels: {
+        enabled: false // Remove as labels dentro da rosca
+    },
+    plotOptions: {
+        pie: {
+            expandOnClick: false,
+            donut: {
+                size: '70%',
+                labels: {
+                    show: true,
+                    total: {
+                        show: true,
+                        label: 'Total',
+                        formatter: function (w) {
+                            return 'R$ 24.500,20'; // Valor total personalizado
+                        },
+                        style: {
+                            color: '#F4F4F4',
+                            fontSize: '16px'
+                        }
+                    }
+                }
+            }
+        }
+    },
+    stroke: {
+        show: false // Remove a borda branca
+    }
+};
+
+var chart = new ApexCharts(document.querySelector("#chart"), options);
+chart.render();
