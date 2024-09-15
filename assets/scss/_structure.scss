@@ -213,7 +213,7 @@
     }
 
     &:not(grafico) {
-        min-height: 234px;
+        // min-height: 234px;
 
         @media screen and (min-width:1366px) {
             min-height: 100%;
@@ -450,8 +450,9 @@ ul.nav.nav-pills {
     color: var(--cinza-claro);
     background: var(--bg-color);
     font-size: 10px;
-    padding: 0 10px;
-    border-radius: 5px;
+    padding: 6px 12px;
+    border-radius: 6px;
+    letter-spacing: normal;
 }
 
 span.card-link {

@@ -11,11 +11,19 @@ p,
 a,
 ul,
 li,
-span {
-    font-family: 'SpaceGrotesk-Regular';
+span,
+text {
+    font-family: 'SpaceGrotesk-Regular' !important;
 }
 
 .navbar-brand,
 .navbar-subtitle {
     font-family: 'SpaceGrotesk-Regular';
+}
+
+text {
+    @media screen and (max-width:500px) {
+
+        font-size: 12px;
+    }
 }
