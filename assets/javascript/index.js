@@ -171,16 +171,16 @@ $(document).ready(function () {
         if (windowWidth <= 1366) {
             console.log("Tela pequena (mobile)");
             $('#sidebarCollapse .img-auto').attr('src', './src/img/icons/sidebar/sidebar_sm.svg');
-            $('.tableDesk').hide();
-            $('.tableMobile').show();
+            // $('.tableDesk').hide();
+            // $('.tableMobile').show();
 
 
 
         } else {
             console.log("Tela grande (desktop)");
             $('#sidebarCollapse .img-auto').attr('src', './src/img/icons/btn-reduce.svg');
-            $('.tableDesk').show();
-            $('.tableMobile').hide();
+            // $('.tableDesk').show();
+            // $('.tableMobile').hide();
 
 
             $('#sidebarCollapse').on('click', function () {

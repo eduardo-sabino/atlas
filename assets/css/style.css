@@ -313,6 +313,13 @@ text {
   border-top: 1px solid #1F1F1F;
 }
 
+.overflow-table {
+  overflow-x: scroll;
+}
+
+.table {
+  min-width: 61rem;
+}
 .table tr th {
   color: var(--laranja);
   font-weight: 300;
@@ -422,6 +429,7 @@ span.card-link {
 .card-footer {
   background: transparent;
   align-items: center;
+  border: none;
 }
 @media screen and (min-width: 768px) {
   .card-footer {
