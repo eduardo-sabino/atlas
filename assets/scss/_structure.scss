@@ -234,16 +234,14 @@
         color: var(--cinza-medio);
         font-weight: 300;
         text-transform: uppercase;
-
+        display: flex;
 
 
         // letter-spacing: 1px;
         align-items: center;
         font-family: SpaceGrotesk-Light;
 
-        @media screen and (min-width:768px) {
-            display: flex;
-        }
+        @media screen and (min-width:768px) {}
 
         img {
             margin-right: .2rem;

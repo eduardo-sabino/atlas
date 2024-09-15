@@ -53,12 +53,12 @@
 
 
 
-
-
 .filter-container {
     display: flex;
     gap: 10px;
     margin-left: auto;
+    align-items: center;
+    justify-content: center;
 
     .btn-filter {
         background-color: var(--bg-color);
@@ -69,17 +69,24 @@
         font-size: 10px;
         cursor: pointer;
         transition: all 0.3s ease;
+        font-family: 'SpaceGrotesk-Regular';
 
+        // Estilo ativo
         &.active {
-            // background-color: #f0ad4e;
             color: var(--laranja);
             border-color: var(--laranja);
         }
 
+        // Estilo ao passar o mouse
         &:hover {
-            // background-color: #f0ad4e;
             color: var(--laranja);
             border-color: var(--laranja);
         }
+    }
+
+    // Quando o container estiver em hover, o active perde o estilo temporariamente
+    &:hover .btn-filter.active:not(:hover) {
+        color: var(--cinza-claro);
+        border-color: var(--bg-color);
     }
 }

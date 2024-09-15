@@ -231,13 +231,9 @@ span {
   color: var(--cinza-medio);
   font-weight: 300;
   text-transform: uppercase;
+  display: flex;
   align-items: center;
   font-family: SpaceGrotesk-Light;
-}
-@media screen and (min-width: 768px) {
-  .custom-card .card-title {
-    display: flex;
-  }
 }
 .custom-card .card-title img {
   margin-right: 0.2rem;
@@ -597,6 +593,8 @@ span.card-link {
   display: flex;
   gap: 10px;
   margin-left: auto;
+  align-items: center;
+  justify-content: center;
 }
 .filter-container .btn-filter {
   background-color: var(--bg-color);
@@ -607,6 +605,7 @@ span.card-link {
   font-size: 10px;
   cursor: pointer;
   transition: all 0.3s ease;
+  font-family: "SpaceGrotesk-Regular";
 }
 .filter-container .btn-filter.active {
   color: var(--laranja);
@@ -615,6 +614,10 @@ span.card-link {
 .filter-container .btn-filter:hover {
   color: var(--laranja);
   border-color: var(--laranja);
+}
+.filter-container:hover .btn-filter.active:not(:hover) {
+  color: var(--cinza-claro);
+  border-color: var(--bg-color);
 }
 
 * {
