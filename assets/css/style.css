@@ -408,6 +408,11 @@ ul.nav.nav-pills .nav-item a.nav-link {
   color: var(--cinza-claro);
   font-size: 12px;
 }
+@media screen and (min-width: 1366px) {
+  ul.nav.nav-pills .nav-item a.nav-link {
+    font-size: 14px;
+  }
+}
 ul.nav.nav-pills .nav-item a.nav-link.active {
   color: var(--laranja);
   border: 1px solid var(--laranja);
@@ -603,7 +608,7 @@ span.card-link {
 }
 
 .legend-label {
-  color: #f4f4f4;
+  color: var(--cinza-claro);
   font-size: 14px;
 }
 
@@ -644,7 +649,7 @@ span.card-link {
 }
 .filter-container .btn-filter {
   background-color: var(--bg-color);
-  color: var(--cinza-claro);
+  color: var(--cinza-medio);
   border: 1px solid var(--bg-color);
   padding: 6px 12px;
   border-radius: 6px;
@@ -685,6 +690,11 @@ span.card-link {
 
 .legend-label {
   font-family: "SpaceGrotesk-Regular";
+}
+
+g text {
+  color: var(--cinza-claro) !important;
+  fill: var(--cinza-claro) !important;
 }
 
 * {

@@ -447,6 +447,10 @@ ul.nav.nav-pills {
             color: var(--cinza-claro);
             font-size: 12px;
 
+            @media screen and (min-width:1366px) {
+                font-size: 14px;
+            }
+
             &.active {
                 color: var(--laranja);
                 border: 1px solid var(--laranja);
