@@ -314,36 +314,37 @@ text {
   border-top: 1px solid #1F1F1F;
 }
 
-.overflow-table {
-  overflow-x: scroll;
+@media screen and (max-width: 1024px) {
+  .overflow-table {
+    overflow-x: scroll;
+  }
 }
-
-.table {
+.overflow-table .table {
   min-width: 61rem;
 }
-.table tr th {
+.overflow-table .table tr th {
   color: var(--laranja);
   font-weight: 300;
   font-family: "SpaceGrotesk-Regular";
 }
-.table tr td {
+.overflow-table .table tr td {
   color: var(--cinza-medio);
   font-weight: 300;
   font-family: "SpaceGrotesk-Regular";
 }
-.table tr th,
-.table tr td {
+.overflow-table .table tr th,
+.overflow-table .table tr td {
   border: none;
 }
 @media screen and (max-width: 500px) {
-  .table tr th,
-  .table tr td {
+  .overflow-table .table tr th,
+  .overflow-table .table tr td {
     font-size: 10px;
   }
 }
 @media screen and (min-width: 501px) {
-  .table tr th,
-  .table tr td {
+  .overflow-table .table tr th,
+  .overflow-table .table tr td {
     font-size: 14px;
   }
 }
