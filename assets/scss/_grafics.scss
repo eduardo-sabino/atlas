@@ -82,6 +82,7 @@
         cursor: pointer;
         transition: all 0.3s ease;
         font-family: 'SpaceGrotesk-Regular';
+        text-transform: uppercase;
 
         // Estilo ativo
         &.active {
