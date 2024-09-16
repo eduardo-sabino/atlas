@@ -60,6 +60,18 @@
     align-items: center;
     justify-content: center;
 
+    .input-icon {
+        input {
+            background: var(--bg-color);
+            color: var(--cinza);
+            border-radius: 6px;
+            border: none;
+            padding-top: 6px;
+            padding-bottom: 6px;
+            font-family: SpaceGrotesk-Regular;
+        }
+    }
+
     .btn-filter {
         background-color: var(--bg-color);
         color: var(--cinza-claro);
@@ -89,6 +101,25 @@
         color: var(--cinza-claro);
         border-color: var(--bg-color);
     }
+
+    &.listadepositantes {
+        @media screen and (max-width:767px) {
+            display: block;
+
+            .input-icon {
+                width: 100%;
+
+                input {
+                    width: 100%;
+                }
+            }
+        }
+
+        @media screen and (min-width:768px) {
+            display: flex;
+        }
+    }
+
 }
 
 .legend-label {

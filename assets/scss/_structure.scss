@@ -459,6 +459,11 @@ ul.nav.nav-pills {
     padding: 6px 12px;
     border-radius: 6px;
     letter-spacing: normal;
+
+    &:hover{
+        text-decoration: none;
+        color: var(--laranja);
+    }
 }
 
 span.card-link {
@@ -496,5 +501,22 @@ span.card-link {
 }
 
 
+.input-icon {
+    position: relative;
+    display: inline-block;
+}
+
+.input-icon input {
+    padding-left: 30px;
+    /* Espaço para o ícone */
+}
+
+.input-icon i {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #aaa;
+}
 
 // @media screen and (min-width:769px) {}

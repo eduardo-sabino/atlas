@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --cinza-claro: #F4F4F4;
   --laranja: #DE8734;
@@ -421,6 +422,10 @@ ul.nav.nav-pills .nav-item a.nav-link.active {
   border-radius: 6px;
   letter-spacing: normal;
 }
+.filter:hover {
+  text-decoration: none;
+  color: var(--laranja);
+}
 
 span.card-link {
   color: var(--cinza) !important;
@@ -449,6 +454,24 @@ span.card-link {
 }
 .card-footer .page-item a.active {
   color: var(--laranja);
+}
+
+.input-icon {
+  position: relative;
+  display: inline-block;
+}
+
+.input-icon input {
+  padding-left: 30px;
+  /* Espaço para o ícone */
+}
+
+.input-icon i {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  color: #aaa;
 }
 
 .navbar {
@@ -609,6 +632,15 @@ span.card-link {
   align-items: center;
   justify-content: center;
 }
+.filter-container .input-icon input {
+  background: var(--bg-color);
+  color: var(--cinza);
+  border-radius: 6px;
+  border: none;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  font-family: SpaceGrotesk-Regular;
+}
 .filter-container .btn-filter {
   background-color: var(--bg-color);
   color: var(--cinza-claro);
@@ -631,6 +663,22 @@ span.card-link {
 .filter-container:hover .btn-filter.active:not(:hover) {
   color: var(--cinza-claro);
   border-color: var(--bg-color);
+}
+@media screen and (max-width: 767px) {
+  .filter-container.listadepositantes {
+    display: block;
+  }
+  .filter-container.listadepositantes .input-icon {
+    width: 100%;
+  }
+  .filter-container.listadepositantes .input-icon input {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .filter-container.listadepositantes {
+    display: flex;
+  }
 }
 
 .legend-label {

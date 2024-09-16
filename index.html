@@ -468,10 +468,11 @@
                                         <h6 class="card-title d-block d-md-flex">
                                             <img width="18" src="./src/img/icons/grafico-para-cima.svg">
                                             gráfico de crescimento
-                                            
-                                            
+
+
                                             <div class="filter-container mt-4 mt-md-0">
-                                                <button class="btn-filter active" data-filter="este-ano">Este Ano</button>
+                                                <button class="btn-filter active" data-filter="este-ano">Este
+                                                    Ano</button>
                                                 <button class="btn-filter" data-filter="6-meses">6 Meses</button>
                                                 <button class="btn-filter" data-filter="este-mes">Este Mês</button>
                                                 <button class="btn-filter" data-filter="7-dias">7 Dias</button>
@@ -488,8 +489,24 @@
                             <div class="col-12">
                                 <div class="card card custom-card shadow">
                                     <div class="card-body">
-                                        <h6 class="card-title">
+                                        <h6 class="card-title d-block d-md-flex">
                                             <img src="./src/img/icons/deposito.svg">Lista de Depositantes
+
+                                            <div class="filter-container listadepositantes mt-4 mt-md-0 text-center">
+                                                <div class="input-icon mb-4 mb-md-0">
+                                                    <input type="text" placeholder="Pesquisar">
+                                                    <i class="fas fa-search"></i>
+                                                    <!-- Pode ser um ícone de FontAwesome, por exemplo -->
+                                                </div>
+                                                <button class="btn-filter">
+                                                    <img src="./src/img/icons/cards/filter.svg" alt=""> filtros
+                                                </button>
+                                                <button class="btn-filter"><img src="./src/img/icons/cards/colun.svg"
+                                                        alt=""> colunas</button>
+                                                <button class="btn-filter"><img
+                                                        src="./src/img/icons/cards/organizar.svg" alt="">
+                                                    organizar</button>
+                                            </div>
                                         </h6>
 
                                         <div class="overflow-table">
@@ -505,7 +522,7 @@
                                                         <th>Movimentação</th>
                                                     </tr>
                                                 </thead>
-    
+
                                                 <tbody>
                                                     <tr>
                                                         <td>#*******301 / 03.09.24</td>
@@ -579,72 +596,7 @@
                                                         <td>R$ 5.900,15</td>
                                                         <td>R$ 50.000,00</td>
                                                     </tr>
-    
-                                                </tbody>
-                                            </table>
-    
-                                            <table class="table tableMobile d-none">
-                                                <thead>
-                                                    <tr>
-                                                        <th>Id Trader</th>
-                                                        <!-- <th>Email</th> -->
-                                                        <th>Balanço</th>
-                                                        <!-- <th>Ganhos</th>
-                                                        <th>Perdas</th> -->
-                                                        <th>Lucro</th>
-                                                        <th>Movimentação</th>
-                                                    </tr>
-                                                </thead>
-    
-                                                <tbody>
-                                                    <tr>
-                                                        <td>#*******301 / 03.09.24</td>
-                                                        <td>R$ 2.400,76</td>
-                                                        <td>R$ 5.900,15</td>
-                                                        <td>R$ 50.000,00</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>#*******301 / 03.09.24</td>
-                                                        <td>R$ 2.400,76</td>
-                                                        <td>R$ 5.900,15</td>
-                                                        <td>R$ 50.000,00</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>#*******301 / 03.09.24</td>
-                                                        <td>R$ 2.400,76</td>
-                                                        <td>R$ 5.900,15</td>
-                                                        <td>R$ 50.000,00</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>#*******301 / 03.09.24</td>
-                                                        <td>R$ 2.400,76</td>
-                                                        <td>R$ 5.900,15</td>
-                                                        <td>R$ 50.000,00</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>#*******301 / 03.09.24</td>
-                                                        <td>R$ 2.400,76</td>
-                                                        <td>R$ 5.900,15</td>
-                                                        <td>R$ 50.000,00</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>#*******301 / 03.09.24</td>
-                                                        <td>R$ 2.400,76</td>
-                                                        <td>R$ 5.900,15</td>
-                                                        <td>R$ 50.000,00</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>#*******301 / 03.09.24</td>
-                                                        <td>R$ 2.400,76</td>
-                                                        <td>R$ 5.900,15</td>
-                                                        <td>R$ 50.000,00</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>#*******301 / 03.09.24</td>
-                                                        <td>R$ 2.400,76</td>
-                                                        <td>R$ 5.900,15</td>
-                                                        <td>R$ 50.000,00</td>
-                                                    </tr>
+
                                                 </tbody>
                                             </table>
                                         </div>
@@ -691,12 +643,13 @@
                                             <img src="./src/img/icons/lucrosTotais.png">lucros para sempre
                                         </h6>
 
-                                        <h2 class="card-value orange">R$ 317.014,95</h2>
+                                        <h2 class="card-value">R$ 317.014,95</h2>
 
                                         <p class="card-subtext">
                                             <img src="./src/img/icons/Fill-4.svg">
                                             <span class="green">2%</span> vs mês anterior <span
-                                                class="color-darkGray">+R$ 1.401,14 hoje</span>
+                                                class="color-darkGray">+R$
+                                                1.401,14 hoje</span>
                                         </p>
                                     </div>
                                 </div>
@@ -708,11 +661,12 @@
                                         <h6 class="card-title">
                                             <img src="./src/img/icons/dolar 1.svg">disponível para saque
                                         </h6>
-                                        <h2 class="card-value orange">R$ 89.521,09</h2>
+                                        <h2 class="card-value">R$ 89.521,09</h2>
                                         <p class="card-subtext">
                                             <img src="./src/img/icons/Fill-4.svg">
                                             <span class="green">15%</span> vs mês anterior <span
-                                                class="color-darkGray">+R$ 1.401,14 hoje</span>
+                                                class="color-darkGray">+R$
+                                                1.401,14 hoje</span>
                                         </p>
                                     </div>
                                 </div>
@@ -724,13 +678,20 @@
                             <div class="col-12">
                                 <div class="card custom-card">
                                     <div class="card-body">
-                                        <h6 class="card-title">
+                                        <h6 class="card-title  d-block d-md-flex">
                                             <img width="18" src="./src/img/icons/grafico-para-cima.svg">gráfico de
                                             crescimento
-                                            <a class="filter ml-auto" href="#">
-                                                <span>Mês</span>
-                                                <i class="fas fa-chevron-down"></i>
-                                            </a>
+                                            <div class="filter-container listadepositantes text-center">
+                                                <button class="btn-filter  mt-3 mt-md-0 ">receita gerada</button>
+                                                <button class="btn-filter mt-3 mt-md-0 ">depósitos totais</button>
+                                                <button class="btn-filter active mt-3 mt-md-0 ">registros
+                                                    totais</button>
+                                                <button class="btn-filter mt-3 mt-md-0 ">cliques totais</button>
+
+                                                <button class="btn-filter mt-3 mt-md-0 ">
+                                                    <img src="./src/img/icons/cards/filter.svg" alt=""> filtros
+                                                </button>
+                                            </div>
                                         </h6>
                                         <div id="lineChart2"></div>
                                     </div>
@@ -774,17 +735,123 @@
                             </div>
 
                             <div class="col-12 col-xl-8 pl-xl-1">
-                                <div class="card custom-card">
+                                <div class="card card custom-card shadow">
                                     <div class="card-body">
-                                        <h6 class="card-title">
-                                            <img width="18" src="./src/img/icons/grafico-para-cima.svg">gráfico de
-                                            crescimento
-                                            <a class="filter ml-auto" href="#">
-                                                <span>Mês</span>
-                                                <i class="fas fa-chevron-down"></i>
-                                            </a>
+                                        <h6 class="card-title d-block d-md-flex">
+                                            <img src="./src/img/icons/cards/topafiliados.svg">top afiliados
+
+                                            
                                         </h6>
-                                        <canvas id="graficoCrescimentoChartdois"></canvas>
+
+                                        <div class="overflow-table">
+                                            <table class="table tableDesk">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Posição</th>
+                                                        <th>Id do afiliado</th>
+                                                        <th>Depósitos</th>
+                                                        <th>Soma de depósitos</th>
+                                                        <th>Lucro</th>
+                                                        <th>Saque</th>
+                                                    </tr>
+                                                </thead>
+
+                                                <tbody>
+                                                    <tr>
+                                                        <td>1º</td>
+                                                        <td>#*****0301</td>
+                                                        <td>150</td>
+                                                        <td>R$ 22.450,00</td>
+                                                        <td>R$ 7.700,00</td>
+                                                        <td>R$ 6.900,80</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2º</td>
+                                                        <td>#*****0301</td>
+                                                        <td>150</td>
+                                                        <td>R$ 22.450,00</td>
+                                                        <td>R$ 7.700,00</td>
+                                                        <td>R$ 6.900,80</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3º</td>
+                                                        <td>#*****0301</td>
+                                                        <td>150</td>
+                                                        <td>R$ 22.450,00</td>
+                                                        <td>R$ 7.700,00</td>
+                                                        <td>R$ 6.900,80</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>4º</td>
+                                                        <td>#*****0301</td>
+                                                        <td>150</td>
+                                                        <td>R$ 22.450,00</td>
+                                                        <td>R$ 7.700,00</td>
+                                                        <td>R$ 6.900,80</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>5º</td>
+                                                        <td>#*****0301</td>
+                                                        <td>150</td>
+                                                        <td>R$ 22.450,00</td>
+                                                        <td>R$ 7.700,00</td>
+                                                        <td>R$ 6.900,80</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>6º</td>
+                                                        <td>#*****0301</td>
+                                                        <td>150</td>
+                                                        <td>R$ 22.450,00</td>
+                                                        <td>R$ 7.700,00</td>
+                                                        <td>R$ 6.900,80</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>7º</td>
+                                                        <td>#*****0301</td>
+                                                        <td>150</td>
+                                                        <td>R$ 22.450,00</td>
+                                                        <td>R$ 7.700,00</td>
+                                                        <td>R$ 6.900,80</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>8º</td>
+                                                        <td>#*****0301</td>
+                                                        <td>150</td>
+                                                        <td>R$ 22.450,00</td>
+                                                        <td>R$ 7.700,00</td>
+                                                        <td>R$ 6.900,80</td>
+                                                    </tr>
+                                                    
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+
+                                        <div class="dropdown-divider"></div>
+
+                                        <div class="card-footer">
+                                            <span class="card-link">mostrando 8 de 150 resultados</span>
+                                            <nav aria-label="Page navigation example">
+                                                <ul class="pagination mb-0">
+                                                    <li class="page-item">
+                                                        <a class="page-link" href="#" aria-label="Previous">
+                                                            <span aria-hidden="true">
+                                                                < </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="page-item"><a class="page-link active" href="#">1</a>
+                                                    </li>
+                                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                                    <li class="page-item">
+                                                        <a class="page-link" href="#" aria-label="Next">
+                                                            <span aria-hidden="true">></span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -794,164 +861,117 @@
                             <div class="col-12">
                                 <div class="card card custom-card shadow">
                                     <div class="card-body">
-                                        <h6 class="card-title">
-                                            <img src="./src/img/icons/deposito.svg">Lista de Depositantes
+                                        <h6 class="card-title d-block d-md-flex">
+                                            <img src="./src/img/icons/cards/listaafiliados.svg">lista de afiliados
+
+                                            <div class="filter-container listadepositantes mt-4 mt-md-0 text-center">
+                                                <div class="input-icon mb-4 mb-md-0">
+                                                    <input type="text" placeholder="Pesquisar">
+                                                    <i class="fas fa-search"></i>
+                                                    <!-- Pode ser um ícone de FontAwesome, por exemplo -->
+                                                </div>
+                                                <button class="btn-filter">
+                                                    <img src="./src/img/icons/cards/filter.svg" alt=""> filtros
+                                                </button>
+                                                <button class="btn-filter"><img src="./src/img/icons/cards/colun.svg"
+                                                        alt=""> colunas</button>
+                                                <button class="btn-filter"><img
+                                                        src="./src/img/icons/cards/organizar.svg" alt="">
+                                                    organizar</button>
+                                            </div>
                                         </h6>
 
-                                        <table class="table tableDesk">
-                                            <thead>
-                                                <tr>
-                                                    <th>Id Trader / Data de criação</th>
-                                                    <th>Email</th>
-                                                    <th>Balanço</th>
-                                                    <th>Total de ganhos</th>
-                                                    <th>Total de Perdas</th>
-                                                    <th>Lucro</th>
-                                                    <th>Movimentação</th>
-                                                </tr>
-                                            </thead>
+                                        <div class="overflow-table">
+                                            <table class="table tableDesk">
+                                                <thead>
+                                                    <tr>
+                                                        <th>ID Afiliado</th>
+                                                        <th>Saldo total</th>
+                                                        <th>Saldo disponível</th>
+                                                        <th>Total de ganhos</th>
+                                                        <th>Total de lucros</th>
+                                                        <th>Total de depósitos</th>
+                                                        <th>FTD’s</th>
+                                                    </tr>
+                                                </thead>
 
-                                            <tbody>
-                                                <tr>
-                                                    <td>#*******301 / 03.09.24</td>
-                                                    <td>jon*******@gmail.com</td>
-                                                    <td>R$ 2.400,76</td>
-                                                    <td>R$ 31.900,15</td>
-                                                    <td>R$ 26.000,00</td>
-                                                    <td>R$ 5.900,15</td>
-                                                    <td>R$ 50.000,00</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>#*******301 / 03.09.24</td>
-                                                    <td>jon*******@gmail.com</td>
-                                                    <td>R$ 2.400,76</td>
-                                                    <td>R$ 31.900,15</td>
-                                                    <td>R$ 26.000,00</td>
-                                                    <td>R$ 5.900,15</td>
-                                                    <td>R$ 50.000,00</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>#*******301 / 03.09.24</td>
-                                                    <td>jon*******@gmail.com</td>
-                                                    <td>R$ 2.400,76</td>
-                                                    <td>R$ 31.900,15</td>
-                                                    <td>R$ 26.000,00</td>
-                                                    <td>R$ 5.900,15</td>
-                                                    <td>R$ 50.000,00</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>#*******301 / 03.09.24</td>
-                                                    <td>jon*******@gmail.com</td>
-                                                    <td>R$ 2.400,76</td>
-                                                    <td>R$ 31.900,15</td>
-                                                    <td>R$ 26.000,00</td>
-                                                    <td>R$ 5.900,15</td>
-                                                    <td>R$ 50.000,00</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>#*******301 / 03.09.24</td>
-                                                    <td>jon*******@gmail.com</td>
-                                                    <td>R$ 2.400,76</td>
-                                                    <td>R$ 31.900,15</td>
-                                                    <td>R$ 26.000,00</td>
-                                                    <td>R$ 5.900,15</td>
-                                                    <td>R$ 50.000,00</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>#*******301 / 03.09.24</td>
-                                                    <td>jon*******@gmail.com</td>
-                                                    <td>R$ 2.400,76</td>
-                                                    <td>R$ 31.900,15</td>
-                                                    <td>R$ 26.000,00</td>
-                                                    <td>R$ 5.900,15</td>
-                                                    <td>R$ 50.000,00</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>#*******301 / 03.09.24</td>
-                                                    <td>jon*******@gmail.com</td>
-                                                    <td>R$ 2.400,76</td>
-                                                    <td>R$ 31.900,15</td>
-                                                    <td>R$ 26.000,00</td>
-                                                    <td>R$ 5.900,15</td>
-                                                    <td>R$ 50.000,00</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>#*******301 / 03.09.24</td>
-                                                    <td>jon*******@gmail.com</td>
-                                                    <td>R$ 2.400,76</td>
-                                                    <td>R$ 31.900,15</td>
-                                                    <td>R$ 26.000,00</td>
-                                                    <td>R$ 5.900,15</td>
-                                                    <td>R$ 50.000,00</td>
-                                                </tr>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>#*****0301</td>
+                                                        <td>R$ 17.000,00</td>
+                                                        <td>R$ 2.400,76</td>
+                                                        <td>R$ 31.900,15</td>
+                                                        <td>R$ 26.000,00</td>
+                                                        <td>500</td>
+                                                        <td>150</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>#*****0301</td>
+                                                        <td>R$ 17.000,00</td>
+                                                        <td>R$ 2.400,76</td>
+                                                        <td>R$ 31.900,15</td>
+                                                        <td>R$ 26.000,00</td>
+                                                        <td>500</td>
+                                                        <td>150</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>#*****0301</td>
+                                                        <td>R$ 17.000,00</td>
+                                                        <td>R$ 2.400,76</td>
+                                                        <td>R$ 31.900,15</td>
+                                                        <td>R$ 26.000,00</td>
+                                                        <td>500</td>
+                                                        <td>150</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>#*****0301</td>
+                                                        <td>R$ 17.000,00</td>
+                                                        <td>R$ 2.400,76</td>
+                                                        <td>R$ 31.900,15</td>
+                                                        <td>R$ 26.000,00</td>
+                                                        <td>500</td>
+                                                        <td>150</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>#*****0301</td>
+                                                        <td>R$ 17.000,00</td>
+                                                        <td>R$ 2.400,76</td>
+                                                        <td>R$ 31.900,15</td>
+                                                        <td>R$ 26.000,00</td>
+                                                        <td>500</td>
+                                                        <td>150</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>#*****0301</td>
+                                                        <td>R$ 17.000,00</td>
+                                                        <td>R$ 2.400,76</td>
+                                                        <td>R$ 31.900,15</td>
+                                                        <td>R$ 26.000,00</td>
+                                                        <td>500</td>
+                                                        <td>150</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>#*****0301</td>
+                                                        <td>R$ 17.000,00</td>
+                                                        <td>R$ 2.400,76</td>
+                                                        <td>R$ 31.900,15</td>
+                                                        <td>R$ 26.000,00</td>
+                                                        <td>500</td>
+                                                        <td>150</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>#*****0301</td>
+                                                        <td>R$ 17.000,00</td>
+                                                        <td>R$ 2.400,76</td>
+                                                        <td>R$ 31.900,15</td>
+                                                        <td>R$ 26.000,00</td>
+                                                        <td>500</td>
+                                                        <td>150</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
 
-                                            </tbody>
-                                        </table>
-
-                                        <table class="table tableMobile">
-                                            <thead>
-                                                <tr>
-                                                    <th>Id Trader</th>
-                                                    <!-- <th>Email</th> -->
-                                                    <th>Balanço</th>
-                                                    <!-- <th>Ganhos</th>
-                                                    <th>Perdas</th> -->
-                                                    <th>Lucro</th>
-                                                    <th>Movimentação</th>
-                                                </tr>
-                                            </thead>
-
-                                            <tbody>
-                                                <tr>
-                                                    <td>#*******301 / 03.09.24</td>
-                                                    <td>R$ 2.400,76</td>
-                                                    <td>R$ 5.900,15</td>
-                                                    <td>R$ 50.000,00</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>#*******301 / 03.09.24</td>
-                                                    <td>R$ 2.400,76</td>
-                                                    <td>R$ 5.900,15</td>
-                                                    <td>R$ 50.000,00</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>#*******301 / 03.09.24</td>
-                                                    <td>R$ 2.400,76</td>
-                                                    <td>R$ 5.900,15</td>
-                                                    <td>R$ 50.000,00</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>#*******301 / 03.09.24</td>
-                                                    <td>R$ 2.400,76</td>
-                                                    <td>R$ 5.900,15</td>
-                                                    <td>R$ 50.000,00</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>#*******301 / 03.09.24</td>
-                                                    <td>R$ 2.400,76</td>
-                                                    <td>R$ 5.900,15</td>
-                                                    <td>R$ 50.000,00</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>#*******301 / 03.09.24</td>
-                                                    <td>R$ 2.400,76</td>
-                                                    <td>R$ 5.900,15</td>
-                                                    <td>R$ 50.000,00</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>#*******301 / 03.09.24</td>
-                                                    <td>R$ 2.400,76</td>
-                                                    <td>R$ 5.900,15</td>
-                                                    <td>R$ 50.000,00</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>#*******301 / 03.09.24</td>
-                                                    <td>R$ 2.400,76</td>
-                                                    <td>R$ 5.900,15</td>
-                                                    <td>R$ 50.000,00</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
 
                                         <div class="dropdown-divider"></div>
 
