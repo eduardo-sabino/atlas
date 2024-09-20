@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="./assets/lib/bootstrap-4.6.2-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/slider_style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -75,8 +77,8 @@
                 </li>
 
                 <li>
-                    <a href="#" class="active">
-                        <svg class="active" width="21" height="21" viewBox="0 0 21 21" fill="none"
+                    <a href="#" class="">
+                        <svg class="" width="21" height="21" viewBox="0 0 21 21" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M16.0588 0V1.23529H18.852L14.3684 5.55882H8.37533L3.66235 10.7003L4.57293 11.535L8.91878 6.79412H14.8669L19.7647 2.07126V4.94118H21V0L16.0588 0Z"
@@ -108,8 +110,8 @@
                 </li>
 
                 <li>
-                    <a href="#">
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <a href="#" class="active">
+                        <svg class="active" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M6.63319 12.1952L4.74784 14.0806C3.96622 14.8622 2.70044 14.8622 1.91947 14.0808C1.13834 13.2996 1.13834 12.0337 1.91931 11.2528L5.69066 7.48141C6.47163 6.70041 7.73753 6.70041 8.5185 7.48141C8.77884 7.74175 9.20097 7.74175 9.46131 7.48141C9.72166 7.22106 9.72166 6.79894 9.46131 6.53859C8.15963 5.23691 6.04953 5.23691 4.74784 6.53859L0.976531 10.3099C-0.325156 11.6116 -0.325156 13.7217 0.976531 15.0234C2.27806 16.3258 4.38831 16.3258 5.69069 15.0234L7.57603 13.1381C7.83637 12.8777 7.83637 12.4556 7.57603 12.1952C7.31569 11.9349 6.89353 11.9349 6.63319 12.1952Z"
                                 fill="currentColor" />
@@ -409,654 +411,497 @@
                         <span class="subtitle">Bem vindo(a) a sua plataforma de afiliados</span>
                     </div>
                 </div>
+                <!-- =================================================== -->
 
-
-                <ul class="nav nav-pills">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#Depositantes" data-toggle="tab">Depositantes</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Relatorios" data-toggle="tab">Relatórios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Afiliados" data-toggle="tab">Afiliados</a>
-                    </li>
-                </ul>
-
-                <div class="tab-content">
-                    <div class="tab-pane fade active show" id="Depositantes" role="tabpanel">
+                <div class="">
+                    <div class="">
                         <!-- Depositantes -->
-                        <div class="row pb-2">
-                            <div class="col-12 col-xl-4 pr-xl-1 pb-2 pb-xl-0">
+                        <div class="">
+                            <div class="">
+                                <div class="row_two">
+                                    <div class="card custom-card pr-xl-1 pb-2 pb-xl-0 min-width-546px mb-6px">
+                                        <div class="card-body">
+                                            <h6 class="card-title remove-margin">
+                                                <img src="./src/img/icons/growIcon.svg" alt="">
+                                                <p class="pl-10px gray-30 ">progresso</p>
+                                            </h6>
 
-                                <div class="card custom-card">
-                                    <div class="card-body">
-                                        <h6 class="card-title">
-                                            <img src="./src/img/icons/visaoGeral.svg" alt="">visão geral
-                                            <a class="filter ml-auto" href="#">
-                                                <!-- <img src="./src/img/profile.jpg" class="rounded-circle" alt="Profile" width="30"> -->
-                                                <span>Mês</span>
-                                                <i class="fas fa-chevron-down"></i>
-                                            </a>
-                                        </h6>
-                                        <div class="chart-container">
-                                            <div id="chart"></div>
-                                            <div class="chart-legend">
-                                                <div class="chart-legend-item">
-                                                    <div class="legend-color" style="background-color: #F19B1A;"></div>
-                                                    <div class="legend-label">Depósitos</div>
+
+                                            <div class="mt-24px">
+                                                <div>
+                                                    <div class="d-flex justify-content-between">
+                                                        <p class="gray-30 remove-margin fs-12px">R$ 110k</p>
+                                                        <p class="gray-30 remove-margin fs-12px">R$ 250k</p>
+                                                    </div>
                                                 </div>
-                                                <div class="chart-legend-item">
-                                                    <div class="legend-color" style="background-color: #A6A6A6;"></div>
-                                                    <div class="legend-label">Depositantes</div>
-                                                </div>
-                                                <div class="chart-legend-item">
-                                                    <div class="legend-color" style="background-color: #353535;"></div>
-                                                    <div class="legend-label">FTD's</div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                                <div class="progress h-23px rounded-6px bg-black-50 mt-8px">
+                                                    <div class="progress-bar bg-orange" role="progressbar"
+                                                        style="width: 80%;" aria-valuenow="50" aria-valuemin="0"
+                                                        aria-valuemax="100">
 
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            <div class="col-12 col-xl-8 pl-xl-1">
-                                <div class="card custom-card">
-                                    <div class="card-body">
-                                        <h6 class="card-title d-block d-md-flex">
-                                            <img width="18" src="./src/img/icons/grafico-para-cima.svg">
-                                            gráfico de crescimento
-
-
-                                            <div class="filter-container mt-4 mt-md-0">
-                                                <button class="btn-filter active" data-filter="este-ano">Este
-                                                    Ano</button>
-                                                <button class="btn-filter" data-filter="6-meses">6 Meses</button>
-                                                <button class="btn-filter" data-filter="este-mes">Este Mês</button>
-                                                <button class="btn-filter" data-filter="7-dias">7 Dias</button>
-                                            </div>
-                                        </h6>
-                                        <div id="lineChart1"></div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="card card custom-card shadow">
-                                    <div class="card-body">
-                                        <h6 class="card-title d-block d-md-flex">
-                                            <img src="./src/img/icons/deposito.svg">Lista de Depositantes
-
-                                            <div class="filter-container listadepositantes mt-4 mt-md-0 text-center">
-                                                <div class="input-icon mb-4 mb-md-0">
-                                                    <input type="text" placeholder="Pesquisar">
-                                                    <i class="fas fa-search"></i>
-                                                    <!-- Pode ser um ícone de FontAwesome, por exemplo -->
-                                                </div>
-                                                <button class="btn-filter">
-                                                    <svg width="15" height="14" viewBox="0 0 15 14" fill="none"
-                                                        xmlns="http://www.w3.org/2000/svg">
-                                                        <path
-                                                            d="M5.90344 13.6122C5.7659 13.6122 5.63399 13.5576 5.53674 13.4603C5.43948 13.363 5.38484 13.2311 5.38484 13.0936V8.10723L0.577387 2.82007C0.388142 2.61152 0.263496 2.35254 0.218577 2.07453C0.173658 1.79653 0.210398 1.51146 0.324337 1.25393C0.438276 0.996405 0.624515 0.777483 0.860452 0.623739C1.09639 0.469995 1.37188 0.388039 1.65349 0.387817H12.7464C13.028 0.388039 13.3035 0.469995 13.5395 0.623739C13.7754 0.777483 13.9616 0.996405 14.0756 1.25393C14.1895 1.51146 14.2262 1.79653 14.1813 2.07453C14.1364 2.35254 14.0118 2.61152 13.8225 2.82007L9.01506 8.10723V11.0192C9.01501 11.0969 8.99751 11.1736 8.96385 11.2436C8.93019 11.3136 8.88123 11.3751 8.82059 11.4237L6.22757 13.4981C6.13563 13.5719 6.02131 13.6121 5.90344 13.6122ZM1.65349 1.42502C1.57279 1.42523 1.49388 1.44881 1.4263 1.49293C1.35873 1.53705 1.30539 1.5998 1.27275 1.6736C1.2401 1.7474 1.22954 1.82909 1.24235 1.90876C1.25516 1.98844 1.29079 2.0627 1.34492 2.12255L6.28721 7.56788C6.37188 7.66099 6.41981 7.78173 6.42205 7.90757V12.0149L7.97786 10.7599V7.90757C7.97755 7.77814 8.02564 7.65328 8.11269 7.55751L13.055 2.11217C13.1059 2.05206 13.1388 1.97876 13.1498 1.90076C13.1608 1.82275 13.1495 1.74323 13.1172 1.67136C13.085 1.5995 13.033 1.53823 12.9674 1.49464C12.9018 1.45105 12.8252 1.42691 12.7464 1.42502H1.65349Z"
-                                                            fill="currentColor" />
-                                                    </svg>filtros
-                                                </button>
-
-                                                <button class="btn-filter">
-                                                    <svg width="10" height="14" viewBox="0 0 10 14" fill="none"
-                                                        xmlns="http://www.w3.org/2000/svg">
-                                                        <path
-                                                            d="M5.09995 11.2H0.899951C0.479951 11.2 0.199951 10.92 0.199951 10.5C0.199951 10.08 0.479951 9.8 0.899951 9.8H5.09995C5.51995 9.8 5.79995 10.08 5.79995 10.5C5.79995 10.92 5.51995 11.2 5.09995 11.2Z"
-                                                            fill="currentColor" />
-                                                        <path
-                                                            d="M2.99995 13.3C2.57995 13.3 2.29995 13.02 2.29995 12.6V8.4C2.29995 7.98 2.57995 7.7 2.99995 7.7C3.41995 7.7 3.69995 7.98 3.69995 8.4V12.6C3.69995 13.02 3.41995 13.3 2.99995 13.3Z"
-                                                            fill="currentColor" />
-                                                        <path
-                                                            d="M8.59995 14H7.19995C6.77995 14 6.49995 13.72 6.49995 13.3C6.49995 12.88 6.77995 12.6 7.19995 12.6H8.59995V1.4H5.79995V6.3C5.79995 6.72 5.51995 7 5.09995 7C4.67995 7 4.39995 6.72 4.39995 6.3V1.4C4.39995 0.63 5.02995 0 5.79995 0H8.59995C9.36995 0 9.99995 0.63 9.99995 1.4V12.6C9.99995 13.37 9.36995 14 8.59995 14Z"
-                                                            fill="currentColor" />
-                                                    </svg>
-                                                    colunas
-                                                </button>
-
-
-                                                <button class="btn-filter">
-                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
-                                                        xmlns="http://www.w3.org/2000/svg">
-                                                        <path
-                                                            d="M2.4375 4.46803H9.09857C9.29933 5.38183 10.1154 6.06785 11.0886 6.06785C12.0618 6.06785 12.8779 5.38185 13.0786 4.46803H15.5625C15.8041 4.46803 16 4.27214 16 4.03053C16 3.78892 15.8041 3.59303 15.5625 3.59303H13.0784C12.8773 2.67969 12.0601 1.99323 11.0886 1.99323C10.1166 1.99323 9.2998 2.67958 9.09874 3.59303H2.4375C2.19589 3.59303 2 3.78892 2 4.03053C2 4.27214 2.19589 4.46803 2.4375 4.46803ZM9.92632 4.03167C9.92632 4.03012 9.92635 4.02853 9.92635 4.02697C9.92827 3.38803 10.4496 2.86825 11.0886 2.86825C11.7267 2.86825 12.2481 3.38732 12.2508 4.02596L12.2509 4.03239C12.2499 4.67242 11.7289 5.19288 11.0886 5.19288C10.4486 5.19288 9.92775 4.67294 9.9263 4.03329L9.92632 4.03167ZM15.5625 13.532H13.0784C12.8772 12.6187 12.0601 11.9322 11.0886 11.9322C10.1166 11.9322 9.2998 12.6185 9.09874 13.532H2.4375C2.19589 13.532 2 13.7278 2 13.9695C2 14.2111 2.19589 14.407 2.4375 14.407H9.09857C9.29933 15.3208 10.1154 16.0068 11.0886 16.0068C12.0618 16.0068 12.8779 15.3208 13.0786 14.407H15.5625C15.8041 14.407 16 14.2111 16 13.9695C16 13.7278 15.8041 13.532 15.5625 13.532ZM11.0886 15.1318C10.4486 15.1318 9.92775 14.6118 9.9263 13.9722L9.92632 13.9706C9.92632 13.969 9.92635 13.9675 9.92635 13.9659C9.92827 13.327 10.4496 12.8072 11.0886 12.8072C11.7267 12.8072 12.2481 13.3262 12.2508 13.9648L12.2509 13.9713C12.25 14.6114 11.7289 15.1318 11.0886 15.1318ZM15.5625 8.56251H8.90143C8.70067 7.64871 7.88462 6.96271 6.9114 6.96271C5.93818 6.96271 5.12214 7.64871 4.92138 8.56251H2.4375C2.19589 8.56251 2 8.7584 2 9.00001C2 9.24164 2.19589 9.43751 2.4375 9.43751H4.9216C5.12277 10.3508 5.93991 11.0373 6.9114 11.0373C7.88342 11.0373 8.7002 10.3509 8.90126 9.43751H15.5625C15.8041 9.43751 16 9.24164 16 9.00001C16 8.7584 15.8041 8.56251 15.5625 8.56251ZM8.07368 8.99886C8.07368 9.00044 8.07365 9.002 8.07365 9.00356C8.07173 9.6425 7.55037 10.1623 6.9114 10.1623C6.27334 10.1623 5.75195 9.64321 5.74918 9.0046L5.7491 8.9982C5.75006 8.35808 6.27109 7.83771 6.9114 7.83771C7.55141 7.83771 8.07225 8.35762 8.0737 8.9973L8.07368 8.99886Z"
-                                                            fill="currentColor" />
-                                                    </svg>
-                                                    organizar
-                                                </button>
-                                            </div>
-                                        </h6>
-
-                                        <div class="overflow-table">
-                                            <table class="table tableDesk">
-                                                <thead>
-                                                    <tr>
-                                                        <th>Id Trader / Data de criação</th>
-                                                        <th>Email</th>
-                                                        <th>Balanço</th>
-                                                        <th>Total de ganhos</th>
-                                                        <th>Total de Perdas</th>
-                                                        <th>Lucro</th>
-                                                        <th>Movimentação</th>
-                                                    </tr>
-                                                </thead>
-
-                                                <tbody>
-                                                    <tr>
-                                                        <td>#*******301 / 03.09.24</td>
-                                                        <td>jon*******@gmail.com</td>
-                                                        <td>R$ 2.400,76</td>
-                                                        <td>R$ 31.900,15</td>
-                                                        <td>R$ 26.000,00</td>
-                                                        <td>R$ 5.900,15</td>
-                                                        <td>R$ 50.000,00</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>#*******301 / 03.09.24</td>
-                                                        <td>jon*******@gmail.com</td>
-                                                        <td>R$ 2.400,76</td>
-                                                        <td>R$ 31.900,15</td>
-                                                        <td>R$ 26.000,00</td>
-                                                        <td>R$ 5.900,15</td>
-                                                        <td>R$ 50.000,00</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>#*******301 / 03.09.24</td>
-                                                        <td>jon*******@gmail.com</td>
-                                                        <td>R$ 2.400,76</td>
-                                                        <td>R$ 31.900,15</td>
-                                                        <td>R$ 26.000,00</td>
-                                                        <td>R$ 5.900,15</td>
-                                                        <td>R$ 50.000,00</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>#*******301 / 03.09.24</td>
-                                                        <td>jon*******@gmail.com</td>
-                                                        <td>R$ 2.400,76</td>
-                                                        <td>R$ 31.900,15</td>
-                                                        <td>R$ 26.000,00</td>
-                                                        <td>R$ 5.900,15</td>
-                                                        <td>R$ 50.000,00</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>#*******301 / 03.09.24</td>
-                                                        <td>jon*******@gmail.com</td>
-                                                        <td>R$ 2.400,76</td>
-                                                        <td>R$ 31.900,15</td>
-                                                        <td>R$ 26.000,00</td>
-                                                        <td>R$ 5.900,15</td>
-                                                        <td>R$ 50.000,00</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>#*******301 / 03.09.24</td>
-                                                        <td>jon*******@gmail.com</td>
-                                                        <td>R$ 2.400,76</td>
-                                                        <td>R$ 31.900,15</td>
-                                                        <td>R$ 26.000,00</td>
-                                                        <td>R$ 5.900,15</td>
-                                                        <td>R$ 50.000,00</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>#*******301 / 03.09.24</td>
-                                                        <td>jon*******@gmail.com</td>
-                                                        <td>R$ 2.400,76</td>
-                                                        <td>R$ 31.900,15</td>
-                                                        <td>R$ 26.000,00</td>
-                                                        <td>R$ 5.900,15</td>
-                                                        <td>R$ 50.000,00</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>#*******301 / 03.09.24</td>
-                                                        <td>jon*******@gmail.com</td>
-                                                        <td>R$ 2.400,76</td>
-                                                        <td>R$ 31.900,15</td>
-                                                        <td>R$ 26.000,00</td>
-                                                        <td>R$ 5.900,15</td>
-                                                        <td>R$ 50.000,00</td>
-                                                    </tr>
-
-                                                </tbody>
-                                            </table>
-                                        </div>
-
-
-                                        <div class="dropdown-divider"></div>
-
-                                        <div class="card-footer">
-                                            <span class="card-link">Mostrando 8 de 150 resultados</span>
-                                            <nav aria-label="Page navigation example">
-                                                <ul class="pagination mb-0">
-                                                    <li class="page-item">
-                                                        <a class="page-link" href="#" aria-label="Previous">
-                                                            <span aria-hidden="true">
-                                                                < </span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="page-item"><a class="page-link active" href="#">1</a>
-                                                    </li>
-                                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                                    <li class="page-item"><a class="page-link" href="#">4</a></li>
-                                                    <li class="page-item">
-                                                        <a class="page-link" href="#" aria-label="Next">
-                                                            <span aria-hidden="true">></span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </nav>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="tab-pane fade" id="Relatorios" role="tabpanel">
-                        <div class="row pb-2">
-                            <div class="col-12 col-xl-4 pr-xl-1  pb-2 pb-xl-0">
-                                <div class="card custom-card">
-                                    <div class="card-body">
-                                        <h6 class="card-title">
-                                            <img src="./src/img/icons/lucrosTotais.png">lucros para sempre
-                                        </h6>
-
-                                        <h2 class="card-value">R$ 317.014,95</h2>
-
-                                        <p class="card-subtext">
-                                            <img src="./src/img/icons/Fill-4.svg">
-                                            <span class="green">2%</span> vs mês anterior <span
-                                                class="color-darkGray">+R$
-                                                1.401,14 hoje</span>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-12 col-xl-4 px-xl-1">
-                                <div class="card custom-card">
-                                    <div class="card-body">
-                                        <h6 class="card-title">
-                                            <img src="./src/img/icons/dolar 1.svg">disponível para saque
-                                        </h6>
-                                        <h2 class="card-value">R$ 89.521,09</h2>
-                                        <p class="card-subtext">
-                                            <img src="./src/img/icons/Fill-4.svg">
-                                            <span class="green">15%</span> vs mês anterior <span
-                                                class="color-darkGray">+R$
-                                                1.401,14 hoje</span>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="card custom-card">
-                                    <div class="card-body">
-                                        <h6 class="card-title  d-block d-md-flex">
-                                            <img width="18" src="./src/img/icons/grafico-para-cima.svg">gráfico de
-                                            crescimento
-                                            <div class="filter-container listadepositantes text-center">
-                                                <button class="btn-filter  mt-3 mt-md-0 ">receita gerada</button>
-                                                <button class="btn-filter mt-3 mt-md-0 ">depósitos totais</button>
-                                                <button class="btn-filter active mt-3 mt-md-0 ">registros
-                                                    totais</button>
-                                                <button class="btn-filter mt-3 mt-md-0 ">cliques totais</button>
-
-                                                <button class="btn-filter mt-3 mt-md-0 ">
-                                                    <svg width="15" height="14" viewBox="0 0 15 14" fill="none"
-                                                        xmlns="http://www.w3.org/2000/svg">
-                                                        <path
-                                                            d="M5.90344 13.6122C5.7659 13.6122 5.63399 13.5576 5.53674 13.4603C5.43948 13.363 5.38484 13.2311 5.38484 13.0936V8.10723L0.577387 2.82007C0.388142 2.61152 0.263496 2.35254 0.218577 2.07453C0.173658 1.79653 0.210398 1.51146 0.324337 1.25393C0.438276 0.996405 0.624515 0.777483 0.860452 0.623739C1.09639 0.469995 1.37188 0.388039 1.65349 0.387817H12.7464C13.028 0.388039 13.3035 0.469995 13.5395 0.623739C13.7754 0.777483 13.9616 0.996405 14.0756 1.25393C14.1895 1.51146 14.2262 1.79653 14.1813 2.07453C14.1364 2.35254 14.0118 2.61152 13.8225 2.82007L9.01506 8.10723V11.0192C9.01501 11.0969 8.99751 11.1736 8.96385 11.2436C8.93019 11.3136 8.88123 11.3751 8.82059 11.4237L6.22757 13.4981C6.13563 13.5719 6.02131 13.6121 5.90344 13.6122ZM1.65349 1.42502C1.57279 1.42523 1.49388 1.44881 1.4263 1.49293C1.35873 1.53705 1.30539 1.5998 1.27275 1.6736C1.2401 1.7474 1.22954 1.82909 1.24235 1.90876C1.25516 1.98844 1.29079 2.0627 1.34492 2.12255L6.28721 7.56788C6.37188 7.66099 6.41981 7.78173 6.42205 7.90757V12.0149L7.97786 10.7599V7.90757C7.97755 7.77814 8.02564 7.65328 8.11269 7.55751L13.055 2.11217C13.1059 2.05206 13.1388 1.97876 13.1498 1.90076C13.1608 1.82275 13.1495 1.74323 13.1172 1.67136C13.085 1.5995 13.033 1.53823 12.9674 1.49464C12.9018 1.45105 12.8252 1.42691 12.7464 1.42502H1.65349Z"
-                                                            fill="currentColor" />
-                                                    </svg>filtros
-                                                </button>
-                                            </div>
-                                        </h6>
-                                        <div id="lineChart2"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="tab-pane fade" id="Afiliados" role="tabpanel">
-                        <div class="row pb-2">
-                            <div class="col-12 col-xl-4 pr-xl-1 pb-2 pb-xl-0">
-
-                                <div class="card custom-card">
-                                    <div class="card-body">
-                                        <h6 class="card-title">
-                                            <img src="./src/img/icons/visaoGeral.svg" alt="">visão geral
-                                            <a class="filter ml-auto" href="#">
-                                                <!-- <img src="./src/img/profile.jpg" class="rounded-circle" alt="Profile" width="30"> -->
-                                                <span>Mês</span>
-                                                <i class="fas fa-chevron-down"></i>
-                                            </a>
-                                        </h6>
-                                        <!-- <canvas id="chart"></canvas> -->
-                                        <div class="chart-container">
-                                            <div id="chart1"></div>
-                                            <div class="chart-legend">
-                                                <div class="chart-legend-item">
-                                                    <div class="legend-color" style="background-color: #DE8734;"></div>
-                                                    <div class="legend-label">Afiliados totais</div>
-                                                </div>
-                                                <div class="chart-legend-item">
-                                                    <div class="legend-color" style="background-color: #B9B9B9;"></div>
-                                                    <div class="legend-label">Novos</div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
 
-                            </div>
-
-                            <div class="col-12 col-xl-8 pl-xl-1">
-                                <div class="card card custom-card shadow">
-                                    <div class="card-body">
-                                        <h6 class="card-title d-block d-md-flex">
-                                            <img src="./src/img/icons/cards/topafiliados.svg">top afiliados
-
-
-                                        </h6>
-
-                                        <div class="overflow-table">
-                                            <table class="table tableDesk">
-                                                <thead>
-                                                    <tr>
-                                                        <th>Posição</th>
-                                                        <th>Id do afiliado</th>
-                                                        <th>Depósitos</th>
-                                                        <th>Soma de depósitos</th>
-                                                        <th>Lucro</th>
-                                                        <th>Saque</th>
-                                                    </tr>
-                                                </thead>
-
-                                                <tbody>
-                                                    <tr>
-                                                        <td>1º</td>
-                                                        <td>#*****0301</td>
-                                                        <td>150</td>
-                                                        <td>R$ 22.450,00</td>
-                                                        <td>R$ 7.700,00</td>
-                                                        <td>R$ 6.900,80</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>2º</td>
-                                                        <td>#*****0301</td>
-                                                        <td>150</td>
-                                                        <td>R$ 22.450,00</td>
-                                                        <td>R$ 7.700,00</td>
-                                                        <td>R$ 6.900,80</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>3º</td>
-                                                        <td>#*****0301</td>
-                                                        <td>150</td>
-                                                        <td>R$ 22.450,00</td>
-                                                        <td>R$ 7.700,00</td>
-                                                        <td>R$ 6.900,80</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>4º</td>
-                                                        <td>#*****0301</td>
-                                                        <td>150</td>
-                                                        <td>R$ 22.450,00</td>
-                                                        <td>R$ 7.700,00</td>
-                                                        <td>R$ 6.900,80</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>5º</td>
-                                                        <td>#*****0301</td>
-                                                        <td>150</td>
-                                                        <td>R$ 22.450,00</td>
-                                                        <td>R$ 7.700,00</td>
-                                                        <td>R$ 6.900,80</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>6º</td>
-                                                        <td>#*****0301</td>
-                                                        <td>150</td>
-                                                        <td>R$ 22.450,00</td>
-                                                        <td>R$ 7.700,00</td>
-                                                        <td>R$ 6.900,80</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>7º</td>
-                                                        <td>#*****0301</td>
-                                                        <td>150</td>
-                                                        <td>R$ 22.450,00</td>
-                                                        <td>R$ 7.700,00</td>
-                                                        <td>R$ 6.900,80</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>8º</td>
-                                                        <td>#*****0301</td>
-                                                        <td>150</td>
-                                                        <td>R$ 22.450,00</td>
-                                                        <td>R$ 7.700,00</td>
-                                                        <td>R$ 6.900,80</td>
-                                                    </tr>
-
-                                                </tbody>
-                                            </table>
-                                        </div>
+                                    <div class="card custom-card mb-6px width-100  ">
+                                        <div class="card-body">
+                                            <div class="hid">
+                                                <h6 class="card-title remove-margin">
+                                                    <img src="./src/img/icons/metaAtingida.svg" alt="">
+                                                    <p class="pl-10px gray-30">meta atingida</p>
+                                                </h6>
 
 
-                                        <div class="dropdown-divider"></div>
+                                                <div class="mt-24px">
+                                                    <div>
+                                                        <div class="">
+                                                            <p class="light-gray remove-margin fs-12px mb-17px">Parabéns
+                                                                você
+                                                                atingiu a meta de 100k líquidos faturados, sua placa
+                                                                está
+                                                                disponível, clique no botão para solicitar o envio.</p>
 
-                                        <div class="card-footer">
-                                            <span class="card-link">Mostrando 8 de 150 resultados</span>
-                                            <nav aria-label="Page navigation example">
-                                                <ul class="pagination mb-0">
-                                                    <li class="page-item">
-                                                        <a class="page-link" href="#" aria-label="Previous">
-                                                            <span aria-hidden="true">
-                                                                < </span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="page-item"><a class="page-link active" href="#">1</a>
-                                                    </li>
-                                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                                    <li class="page-item"><a class="page-link" href="#">4</a></li>
-                                                    <li class="page-item">
-                                                        <a class="page-link" href="#" aria-label="Next">
-                                                            <span aria-hidden="true">></span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </nav>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="card card custom-card shadow">
-                                    <div class="card-body">
-                                        <h6 class="card-title d-block d-md-flex">
-                                            <img src="./src/img/icons/cards/listaafiliados.svg">lista de afiliados
-
-                                            <div class="filter-container listadepositantes mt-4 mt-md-0 text-center">
-                                                <div class="input-icon mb-4 mb-md-0">
-                                                    <input type="text" placeholder="Pesquisar">
-                                                    <i class="fas fa-search"></i>
-                                                    <!-- Pode ser um ícone de FontAwesome, por exemplo -->
+                                                        </div>
+                                                    </div>
+                                                    <button
+                                                        class="bg-orange btn-100 fs-12px height-32 border-none rounded-6px weight-500">
+                                                        Solicitar minha placa
+                                                    </button>
                                                 </div>
-                                                <button class="btn-filter">
-                                                    <svg width="15" height="14" viewBox="0 0 15 14" fill="none"
-                                                        xmlns="http://www.w3.org/2000/svg">
-                                                        <path
-                                                            d="M5.90344 13.6122C5.7659 13.6122 5.63399 13.5576 5.53674 13.4603C5.43948 13.363 5.38484 13.2311 5.38484 13.0936V8.10723L0.577387 2.82007C0.388142 2.61152 0.263496 2.35254 0.218577 2.07453C0.173658 1.79653 0.210398 1.51146 0.324337 1.25393C0.438276 0.996405 0.624515 0.777483 0.860452 0.623739C1.09639 0.469995 1.37188 0.388039 1.65349 0.387817H12.7464C13.028 0.388039 13.3035 0.469995 13.5395 0.623739C13.7754 0.777483 13.9616 0.996405 14.0756 1.25393C14.1895 1.51146 14.2262 1.79653 14.1813 2.07453C14.1364 2.35254 14.0118 2.61152 13.8225 2.82007L9.01506 8.10723V11.0192C9.01501 11.0969 8.99751 11.1736 8.96385 11.2436C8.93019 11.3136 8.88123 11.3751 8.82059 11.4237L6.22757 13.4981C6.13563 13.5719 6.02131 13.6121 5.90344 13.6122ZM1.65349 1.42502C1.57279 1.42523 1.49388 1.44881 1.4263 1.49293C1.35873 1.53705 1.30539 1.5998 1.27275 1.6736C1.2401 1.7474 1.22954 1.82909 1.24235 1.90876C1.25516 1.98844 1.29079 2.0627 1.34492 2.12255L6.28721 7.56788C6.37188 7.66099 6.41981 7.78173 6.42205 7.90757V12.0149L7.97786 10.7599V7.90757C7.97755 7.77814 8.02564 7.65328 8.11269 7.55751L13.055 2.11217C13.1059 2.05206 13.1388 1.97876 13.1498 1.90076C13.1608 1.82275 13.1495 1.74323 13.1172 1.67136C13.085 1.5995 13.033 1.53823 12.9674 1.49464C12.9018 1.45105 12.8252 1.42691 12.7464 1.42502H1.65349Z"
-                                                            fill="currentColor" />
-                                                    </svg>filtros
-                                                </button>
-                                                <button class="btn-filter">
-                                                    <svg width="10" height="14" viewBox="0 0 10 14" fill="none"
-                                                        xmlns="http://www.w3.org/2000/svg">
-                                                        <path
-                                                            d="M5.09995 11.2H0.899951C0.479951 11.2 0.199951 10.92 0.199951 10.5C0.199951 10.08 0.479951 9.8 0.899951 9.8H5.09995C5.51995 9.8 5.79995 10.08 5.79995 10.5C5.79995 10.92 5.51995 11.2 5.09995 11.2Z"
-                                                            fill="currentColor" />
-                                                        <path
-                                                            d="M2.99995 13.3C2.57995 13.3 2.29995 13.02 2.29995 12.6V8.4C2.29995 7.98 2.57995 7.7 2.99995 7.7C3.41995 7.7 3.69995 7.98 3.69995 8.4V12.6C3.69995 13.02 3.41995 13.3 2.99995 13.3Z"
-                                                            fill="currentColor" />
-                                                        <path
-                                                            d="M8.59995 14H7.19995C6.77995 14 6.49995 13.72 6.49995 13.3C6.49995 12.88 6.77995 12.6 7.19995 12.6H8.59995V1.4H5.79995V6.3C5.79995 6.72 5.51995 7 5.09995 7C4.67995 7 4.39995 6.72 4.39995 6.3V1.4C4.39995 0.63 5.02995 0 5.79995 0H8.59995C9.36995 0 9.99995 0.63 9.99995 1.4V12.6C9.99995 13.37 9.36995 14 8.59995 14Z"
-                                                            fill="currentColor" />
-                                                    </svg>
-                                                    colunas
-                                                </button>
-                                                <button class="btn-filter">
-                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
-                                                        xmlns="http://www.w3.org/2000/svg">
-                                                        <path
-                                                            d="M2.4375 4.46803H9.09857C9.29933 5.38183 10.1154 6.06785 11.0886 6.06785C12.0618 6.06785 12.8779 5.38185 13.0786 4.46803H15.5625C15.8041 4.46803 16 4.27214 16 4.03053C16 3.78892 15.8041 3.59303 15.5625 3.59303H13.0784C12.8773 2.67969 12.0601 1.99323 11.0886 1.99323C10.1166 1.99323 9.2998 2.67958 9.09874 3.59303H2.4375C2.19589 3.59303 2 3.78892 2 4.03053C2 4.27214 2.19589 4.46803 2.4375 4.46803ZM9.92632 4.03167C9.92632 4.03012 9.92635 4.02853 9.92635 4.02697C9.92827 3.38803 10.4496 2.86825 11.0886 2.86825C11.7267 2.86825 12.2481 3.38732 12.2508 4.02596L12.2509 4.03239C12.2499 4.67242 11.7289 5.19288 11.0886 5.19288C10.4486 5.19288 9.92775 4.67294 9.9263 4.03329L9.92632 4.03167ZM15.5625 13.532H13.0784C12.8772 12.6187 12.0601 11.9322 11.0886 11.9322C10.1166 11.9322 9.2998 12.6185 9.09874 13.532H2.4375C2.19589 13.532 2 13.7278 2 13.9695C2 14.2111 2.19589 14.407 2.4375 14.407H9.09857C9.29933 15.3208 10.1154 16.0068 11.0886 16.0068C12.0618 16.0068 12.8779 15.3208 13.0786 14.407H15.5625C15.8041 14.407 16 14.2111 16 13.9695C16 13.7278 15.8041 13.532 15.5625 13.532ZM11.0886 15.1318C10.4486 15.1318 9.92775 14.6118 9.9263 13.9722L9.92632 13.9706C9.92632 13.969 9.92635 13.9675 9.92635 13.9659C9.92827 13.327 10.4496 12.8072 11.0886 12.8072C11.7267 12.8072 12.2481 13.3262 12.2508 13.9648L12.2509 13.9713C12.25 14.6114 11.7289 15.1318 11.0886 15.1318ZM15.5625 8.56251H8.90143C8.70067 7.64871 7.88462 6.96271 6.9114 6.96271C5.93818 6.96271 5.12214 7.64871 4.92138 8.56251H2.4375C2.19589 8.56251 2 8.7584 2 9.00001C2 9.24164 2.19589 9.43751 2.4375 9.43751H4.9216C5.12277 10.3508 5.93991 11.0373 6.9114 11.0373C7.88342 11.0373 8.7002 10.3509 8.90126 9.43751H15.5625C15.8041 9.43751 16 9.24164 16 9.00001C16 8.7584 15.8041 8.56251 15.5625 8.56251ZM8.07368 8.99886C8.07368 9.00044 8.07365 9.002 8.07365 9.00356C8.07173 9.6425 7.55037 10.1623 6.9114 10.1623C6.27334 10.1623 5.75195 9.64321 5.74918 9.0046L5.7491 8.9982C5.75006 8.35808 6.27109 7.83771 6.9114 7.83771C7.55141 7.83771 8.07225 8.35762 8.0737 8.9973L8.07368 8.99886Z"
-                                                            fill="currentColor" />
-                                                    </svg>
-
-                                                    organizar
-                                                </button>
                                             </div>
-                                        </h6>
+                                            <div class="hid_mobile d-flex_mobile justify-content-between gap-12px">
+                                                <div class="">
+                                                    <h6 class="card-title remove-margin ">
+                                                        <img src="./src/img/icons/metaAtingida.svg" alt="">
+                                                        <p class="pl-10px gray-30  ft-14px">meta atingida</p>
+                                                    </h6>
 
-                                        <div class="overflow-table">
-                                            <table class="table tableDesk">
-                                                <thead>
-                                                    <tr>
-                                                        <th>ID Afiliado</th>
-                                                        <th>Saldo total</th>
-                                                        <th>Saldo disponível</th>
-                                                        <th>Total de ganhos</th>
-                                                        <th>Total de lucros</th>
-                                                        <th>Total de depósitos</th>
-                                                        <th>FTD’s</th>
-                                                    </tr>
-                                                </thead>
+                                                    <p class="light-gray remove-margin fs-12px mb-17px mt-24px">Parabéns
+                                                        você
+                                                        atingiu a meta de 100k líquidos faturados, sua placa está
+                                                        disponível, clique no botão para solicitar o envio.</p>
 
-                                                <tbody>
-                                                    <tr>
-                                                        <td>#*****0301</td>
-                                                        <td>R$ 17.000,00</td>
-                                                        <td>R$ 2.400,76</td>
-                                                        <td>R$ 31.900,15</td>
-                                                        <td>R$ 26.000,00</td>
-                                                        <td>500</td>
-                                                        <td>150</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>#*****0301</td>
-                                                        <td>R$ 17.000,00</td>
-                                                        <td>R$ 2.400,76</td>
-                                                        <td>R$ 31.900,15</td>
-                                                        <td>R$ 26.000,00</td>
-                                                        <td>500</td>
-                                                        <td>150</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>#*****0301</td>
-                                                        <td>R$ 17.000,00</td>
-                                                        <td>R$ 2.400,76</td>
-                                                        <td>R$ 31.900,15</td>
-                                                        <td>R$ 26.000,00</td>
-                                                        <td>500</td>
-                                                        <td>150</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>#*****0301</td>
-                                                        <td>R$ 17.000,00</td>
-                                                        <td>R$ 2.400,76</td>
-                                                        <td>R$ 31.900,15</td>
-                                                        <td>R$ 26.000,00</td>
-                                                        <td>500</td>
-                                                        <td>150</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>#*****0301</td>
-                                                        <td>R$ 17.000,00</td>
-                                                        <td>R$ 2.400,76</td>
-                                                        <td>R$ 31.900,15</td>
-                                                        <td>R$ 26.000,00</td>
-                                                        <td>500</td>
-                                                        <td>150</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>#*****0301</td>
-                                                        <td>R$ 17.000,00</td>
-                                                        <td>R$ 2.400,76</td>
-                                                        <td>R$ 31.900,15</td>
-                                                        <td>R$ 26.000,00</td>
-                                                        <td>500</td>
-                                                        <td>150</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>#*****0301</td>
-                                                        <td>R$ 17.000,00</td>
-                                                        <td>R$ 2.400,76</td>
-                                                        <td>R$ 31.900,15</td>
-                                                        <td>R$ 26.000,00</td>
-                                                        <td>500</td>
-                                                        <td>150</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>#*****0301</td>
-                                                        <td>R$ 17.000,00</td>
-                                                        <td>R$ 2.400,76</td>
-                                                        <td>R$ 31.900,15</td>
-                                                        <td>R$ 26.000,00</td>
-                                                        <td>500</td>
-                                                        <td>150</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
+                                                </div>
 
+                                                <div class="mt-24px width-100 ">
 
-                                        <div class="dropdown-divider"></div>
+                                                    <button
+                                                        class="bg-orange btn-100 fs-12px height-32 border-none rounded-6px weight-500 width-316px">
+                                                        Solicitar minha placa
+                                                    </button>
+                                                </div>
+                                            </div>
 
-                                        <div class="card-footer">
-                                            <span class="card-link">Mostrando 8 de 150 resultados</span>
-                                            <nav aria-label="Page navigation example">
-                                                <ul class="pagination mb-0">
-                                                    <li class="page-item">
-                                                        <a class="page-link" href="#" aria-label="Previous">
-                                                            <span aria-hidden="true">
-                                                                < </span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="page-item"><a class="page-link active" href="#">1</a>
-                                                    </li>
-                                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                                    <li class="page-item"><a class="page-link" href="#">4</a></li>
-                                                    <li class="page-item">
-                                                        <a class="page-link" href="#" aria-label="Next">
-                                                            <span aria-hidden="true">></span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </nav>
                                         </div>
                                     </div>
                                 </div>
+
+                                <div class="hid">
+                                    <div class="card custom-card rm_custom-card mb-6px">
+                                        <div class="card-body">
+                                            <h6 class="card-title remove-margin">
+                                                <img src="./src/img/icons/linkIcon.svg" alt="">
+                                                <p class="pl-10px gray-30">links</p>
+                                            </h6>
+
+
+                                            <div class="mt-24px mb-24">
+                                                <div class="dflex">
+                                                    <div class="dflex">
+                                                        <p class="light-gray remove-margin fs-12px mb-6px ft-16px">Seu link, 80%
+                                                            de
+                                                            comissão do link.</p>
+                                                        <p class="light-gray remove-margin fs-10px mb-6px">
+                                                            http://www.atlasbroker.io/?ref=2149xkl1wy</p>
+                                                    </div>
+                                                    <button
+                                                        class="bg-orange btn-82 fs-12px height-34 border-none fs-12px black-80 rounded-6px weight-500">
+                                                        Copiar Link
+                                                    </button>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="d-flex gap-8px flex-column">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="d-flex align-items-center">
+                                                        <img class="w-6px" src="./src/img/icons/arrow.svg" alt="">
+                                                        <p class="pl-10px gray-30 fs-10px ">Inscrições</p>
+                                                    </div>
+                                                    <p class="fs-10px remove-margin gray-30">200</p>
+                                                </div>
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="d-flex align-items-center">
+                                                        <img class="w-6px" src="./src/img/icons/arrow.svg" alt="">
+                                                        <p class="pl-10px gray-30 fs-10px ">Total de cliques</p>
+                                                    </div>
+                                                    <p class="fs-10px remove-margin gray-30">917</p>
+                                                </div>
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="d-flex align-items-center">
+                                                        <img class="w-6px" src="./src/img/icons/arrow.svg" alt="">
+                                                        <p class="pl-10px gray-30 fs-10px">Depósitos</p>
+                                                    </div>
+                                                    <p class="fs-10px remove-margin gray-30">R$ 17.205.95</p>
+                                                </div>
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="d-flex align-items-center">
+                                                        <img class="w-6px" src="./src/img/icons/arrow.svg" alt="">
+                                                        <p class="pl-10px gray-30 fs-10px">FTD’s</p>
+                                                    </div>
+                                                    <p class="fs-10px remove-margin gray-30">45</p>
+                                                </div>
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="d-flex align-items-center">
+                                                        <img class="w-6px" src="./src/img/icons/arrow.svg" alt="">
+                                                        <p class="pl-10px gray-30 fs-10px">Comissão total gerada</p>
+                                                    </div>
+                                                    <p class="fs-10px remove-margin gray-30">R$ 13.764,76</p>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+
+                                    <div class="card custom-card mb-6px rm_custom-card">
+                                        <div class="card-body">
+                                            <h6 class="card-title remove-margin">
+                                                <img src="./src/img/icons/premiumSpecial.svg" alt="">
+                                                <p class="pl-10px gray-30">premiação </p>
+                                            </h6>
+
+
+                                            <div class="mt-24px mb-24">
+                                                <p class="light-gray remove-margin fs-10px mb-6px ft-16px">A Atlas possui placas
+                                                    de
+                                                    premiação para você afiliado exclusivo.</p>
+                                                <p class="light-gray remove-margin fs-10px mb-6px ft-16px">Veja abaixo as nossas
+                                                    placas de premiação e resgate a sua a cada novo nível conquistado.
+                                                </p>
+                                            </div>
+
+
+
+
+
+
+
+                                        </div>
+                                    </div>
+
+                                    <div class="card custom-card mb-6px rm_custom-card">
+                                        <div class="card-body">
+                                            <h6 class="card-title remove-margin">
+                                                <img src="./src/img/icons/premiumSpecial.svg" alt="">
+                                                <p class="pl-10px gray-30">premiação especial</p>
+                                            </h6>
+
+
+                                            <div class="mt-24px mb-24">
+                                                <p class="light-gray remove-margin fs-12px mb-6px ft-16px">Ao atingir a meta de
+                                                    10
+                                                    Milhões líquidos faturados, você receberá uma premiação exclusiva.
+                                                </p>
+                                            </div>
+
+                                            <div class="image-container">
+                                                <img src="./src/img/icons/slider_images/CaixaMisteriosa.png" alt="">
+                                            </div>
+
+
+
+                                        </div>
+                                    </div>
+
+                                    <div class="card custom-card mb-6px rm_custom-card">
+                                        <div class="card-body">
+                                            <h6 class="card-title remove-margin">
+                                                <img src="./src/img/icons/ofertadomes.svg" alt="">
+                                                <p class="pl-10px gray-30">oferta do mês</p>
+                                            </h6>
+
+
+                                            <div class="mt-24px mb-24">
+                                                <div class="">
+                                                    <div class="">
+                                                        <p class="light-gray remove-margin fs-12px ">Veja as ativações
+                                                            e impulsione seus resultados através das promoções que
+                                                            preparamos para você.</p>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="d-flex gap-12px flex-column">
+                                                <div class="d-flex justify-content-between color-orange">
+                                                    <div class="d-flex align-items-center ">
+                                                        <img class="w-6px" src="./src/img/icons/arrow.svg" alt="">
+                                                        <p class="pl-10px gray-30 fs-10px color-orange">Oferta de
+                                                            Setembro
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <p class="light-gray remove-margin fs-12px ">Ganhe R$ 20,00 no seu
+                                                    primeiro
+                                                    depósito, e comece a negociar agora mesmo</p>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+
+                                    <div class="card custom-card mb-6px rm_custom-card">
+                                        <div class="card-body">
+                                            <h6 class="card-title remove-margin">
+                                                <img src="./src/img/icons/materiaisdepromocao.svg" alt="">
+                                                <p class="pl-10px gray-30">materiais de promoções</p>
+                                            </h6>
+
+
+                                            <div class="mt-24px mb-24">
+                                                <div class="">
+                                                    <div class="">
+                                                        <p class="light-gray remove-margin fs-12px ">Acesse o material
+                                                            de
+                                                            promoções e receba o conteúdo completo para ajudar você a
+                                                            expandir seu alcance.</p>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                            <button
+                                                class="bg-orange btn-100 fs-12px height-43 border-none rounded-6px weight-500">
+                                                Clique aqui para acessar
+                                            </button>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="hid_mobile">
+                                    <div class="row_two">
+                                        <div>
+                                            <div class="card custom-card rm_custom-card mb-6px width-546px">
+                                                <div class="card-body">
+                                                    <h6 class="card-title remove-margin">
+                                                        <img src="./src/img/icons/linkIcon.svg" alt="">
+                                                        <p class="pl-10px gray-30 ft-14px">links</p>
+                                                    </h6>
+
+
+                                                    <div class="mt-24px mb-24">
+                                                        <div class="dflex justify-content-between">
+                                                            <div class="">
+                                                                <p class="light-gray remove-margin fs-12px mb-6px ft-16px">Seu
+                                                                    link,
+                                                                    80%
+                                                                    de
+                                                                    comissão do link.</p>
+                                                                <p class="light-gray remove-margin fs-10px mb-6px">
+                                                                    http://www.atlasbroker.io/?ref=2149xkl1wy</p>
+                                                            </div>
+                                                            <button
+                                                                class="bg-orange btn-82 fs-12px height-34 border-none fs-12px black-80 rounded-6px weight-500">
+                                                                Copiar Link
+                                                            </button>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="d-flex gap-8px flex-column">
+                                                        <div class="d-flex justify-content-between">
+                                                            <div class="d-flex align-items-center">
+                                                                <img class="w-6px" src="./src/img/icons/arrow.svg"
+                                                                    alt="">
+                                                                <p class="pl-10px gray-30 fs-10px ">Inscrições</p>
+                                                            </div>
+                                                            <p class="fs-10px remove-margin gray-30">200</p>
+                                                        </div>
+                                                        <div class="d-flex justify-content-between">
+                                                            <div class="d-flex align-items-center">
+                                                                <img class="w-6px" src="./src/img/icons/arrow.svg"
+                                                                    alt="">
+                                                                <p class="pl-10px gray-30 fs-10px ">Total de cliques</p>
+                                                            </div>
+                                                            <p class="fs-10px remove-margin gray-30">917</p>
+                                                        </div>
+                                                        <div class="d-flex justify-content-between">
+                                                            <div class="d-flex align-items-center">
+                                                                <img class="w-6px" src="./src/img/icons/arrow.svg"
+                                                                    alt="">
+                                                                <p class="pl-10px gray-30 fs-10px">Depósitos</p>
+                                                            </div>
+                                                            <p class="fs-10px remove-margin gray-30">R$ 17.205.95</p>
+                                                        </div>
+                                                        <div class="d-flex justify-content-between">
+                                                            <div class="d-flex align-items-center">
+                                                                <img class="w-6px" src="./src/img/icons/arrow.svg"
+                                                                    alt="">
+                                                                <p class="pl-10px gray-30 fs-10px">FTD’s</p>
+                                                            </div>
+                                                            <p class="fs-10px remove-margin gray-30">45</p>
+                                                        </div>
+                                                        <div class="d-flex justify-content-between">
+                                                            <div class="d-flex align-items-center">
+                                                                <img class="w-6px" src="./src/img/icons/arrow.svg"
+                                                                    alt="">
+                                                                <p class="pl-10px gray-30 fs-10px">Comissão total gerada
+                                                                </p>
+                                                            </div>
+                                                            <p class="fs-10px remove-margin gray-30">R$ 13.764,76</p>
+                                                        </div>
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+                                            <div class="card custom-card mb-6px rm_custom-card width-546px">
+                                                <div class="card-body">
+                                                    <h6 class="card-title remove-margin">
+                                                        <img src="./src/img/icons/ofertadomes.svg" alt="">
+                                                        <p class="pl-10px gray-30 ft-14px">oferta do mês</p>
+                                                    </h6>
+
+
+                                                    <div class="mt-24px mb-24">
+                                                        <div class="">
+                                                            <div class="">
+                                                                <p class="light-gray remove-margin fs-12px ft-16px">Veja as
+                                                                    ativações
+                                                                    e impulsione seus resultados através das promoções
+                                                                    que
+                                                                    preparamos para você.</p>
+
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="d-flex  flex-column">
+                                                        <div class="d-flex justify-content-between color-orange">
+                                                            <div class="d-flex align-items-center ">
+                                                                <img class="w-6px" src="./src/img/icons/arrow.svg"
+                                                                    alt="">
+                                                                <p class="pl-10px gray-30 fs-10px color-orange mb-12px ">Oferta
+                                                                    de
+                                                                    Setembro
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <p class="light-gray remove-margin fs-12px ft-16px">Ganhe R$ 20,00 no
+                                                            seu
+                                                            primeiro
+                                                            depósito, e comece a negociar agora mesmo</p>
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+
+                                            <div class="card custom-card mb-6px rm_custom-card width-546px">
+                                                <div class="card-body">
+                                                    <h6 class="card-title remove-margin">
+                                                        <img src="./src/img/icons/materiaisdepromocao.svg" alt="">
+                                                        <p class="pl-10px gray-30 ft-14px">materiais de promoções</p>
+                                                    </h6>
+
+
+                                                    <div class="mt-24px mb-24">
+                                                        <div class="">
+                                                            <div class="">
+                                                                <p class="light-gray remove-margin fs-12px ft-16px">Acesse o
+                                                                    material
+                                                                    de
+                                                                    promoções e receba o conteúdo completo para ajudar
+                                                                    você
+                                                                    a
+                                                                    expandir seu alcance.</p>
+
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
+                                                    <button
+                                                        class="bg-orange btn-100 fs-12px height-43 border-none rounded-6px weight-500">
+                                                        Clique aqui para acessar
+                                                    </button>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="width-100 ">
+                                            <div class="card custom-card mb-6px rm_custom-card width-100 ">
+                                                <div class="card-body">
+                                                    <h6 class="card-title remove-margin">
+                                                        <img src="./src/img/icons/premiumSpecial.svg" alt="">
+                                                        <p class="pl-10px gray-30 ft-14px">premiação </p>
+                                                    </h6>
+
+
+                                                    <div class="mt-24px mb-24">
+                                                        <p class="light-gray remove-margin fs-10px mb-6px ft-16px">A Atlas
+                                                            possui
+                                                            placas
+                                                            de
+                                                            premiação para você afiliado exclusivo.</p>
+                                                        <p class="light-gray remove-margin fs-10px mb-6px ft-16px">Veja abaixo
+                                                            as
+                                                            nossas
+                                                            placas de premiação e resgate a sua a cada novo nível
+                                                            conquistado.
+                                                        </p>
+                                                    </div>
+
+
+
+
+
+
+
+                                                </div>
+                                            </div>
+
+                                            <div class="card custom-card mb-6px rm_custom-card width-100 ">
+                                                <div class="card-body">
+                                                    <h6 class="card-title remove-margin">
+                                                        <img src="./src/img/icons/premiumSpecial.svg" alt="">
+                                                        <p class="pl-10px gray-30 ft-14px">premiação especial</p>
+                                                    </h6>
+
+
+                                                    <div class="mt-24px mb-24">
+                                                        <p class="light-gray remove-margin fs-12px mb-6px ft-16px">Ao atingir a
+                                                            meta
+                                                            de
+                                                            10
+                                                            Milhões líquidos faturados, você receberá uma premiação
+                                                            exclusiva.
+                                                        </p>
+                                                    </div>
+
+                                                    <div class="image-container">
+                                                        <img src="./src/img/icons/CaixaMisteriosaDesk.png"
+                                                            alt="">
+                                                    </div>
+
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
                             </div>
                         </div>
 
@@ -1073,6 +918,11 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <script src="./assets/javascript/index.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./assets/javascript/script.js"></script>
 
 </body>
 
